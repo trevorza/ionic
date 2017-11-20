@@ -1,0 +1,51 @@
+{
+  "name": "cordova-plugin-apprate",
+  "version": "1.3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushandplay/cordova-plugin-apprate.git"
+  },
+  "dependencies": {
+    "cordova": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cordovacli": "*"
+  },
+  "gitHead": "c0ed9c0ca037f8990186e1eed682abe44a4b0b73",
+  "description": "A plugin to provide rate this app functionality into your Cordova / Phonegap application<br>",
+  "bugs": {
+    "url": "https://github.com/pushandplay/cordova-plugin-apprate/issues"
+  },
+  "homepage": "https://github.com/pushandplay/cordova-plugin-apprate#readme",
+  "_id": "cordova-plugin-apprate@1.3.0",
+  "scripts": {},
+  "_shasum": "0f2bbcf680738e972045e9787771048f620abbc5",
+  "_from": "cordova-plugin-apprate@>=1.3.0 <2.0.0",
+  "_npmVersion": "4.2.0",
+  "_nodeVersion": "7.9.0",
+  "_npmUser": {
+    "name": "westonganger",
+    "email": "westonganger@gmail.com"
+  },
+  "dist": {
+    "shasum": "0f2bbcf680738e972045e9787771048f620abbc5",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-apprate/-/cordova-plugin-apprate-1.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "speige",
+      "email": "devingarner@gmail.com"
+    },
+    {
+      "name": "westonganger",
+      "email": "westonganger@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-apprate-1.3.0.tgz_1494344743839_0.7016909853555262"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-apprate/-/cordova-plugin-apprate-1.3.0.tgz"
+}

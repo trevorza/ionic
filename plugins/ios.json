@@ -1,0 +1,87 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-admob-free": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-apprate": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-crop": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-email-composer": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "826720427470540",
+      "APP_NAME": "Ion2FullApp",
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-geolocation": {
+      "GEOLOCATION_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-googleplus": {
+      "REVERSED_CLIENT_ID": "com.googleusercontent.apps.1092390853283-icg6lqtcg6k270de9c8tv3i7qehlqtor",
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "twitter-connect-plugin": {
+      "FABRIC_KEY": "6da298eb1112d28ba03183d50236498db4b7380e",
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-clipboard": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-admob-sdk": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-promise-polyfill": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "cordova-plugin-nativestorage",
+  "version": "2.2.2",
+  "description": "Native storage of variables in Android, iOS and Windows",
+  "author": {
+    "name": "Gilles Callebaut",
+    "email": "callebaut.gilles@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Alok Rajiv"
+    },
+    {
+      "name": "Yann Deshayes",
+      "email": "deshayes.yann@gmail.com",
+      "url": "https://github.com/ydeshayes"
+    }
+  ],
+  "cordova": {
+    "id": "cordova-plugin-nativestorage",
+    "platforms": [
+      "android",
+      "ios",
+      "browser",
+      "windows",
+      "osx"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCocoaProject/cordova-plugin-nativestorage.git"
+  },
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "jshint www && jshint tests"
+  },
+  "keywords": [
+    "cordova",
+    "device",
+    "storage",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser",
+    "cordova-windows",
+    "LocalStorage",
+    "NSUserDefaults",
+    "SharedPreferences"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/TheCocoaProject/cordova-plugin-nativestorage/issues"
+  },
+  "homepage": "https://github.com/TheCocoaProject/cordova-plugin-nativestorage#README.md",
+  "_id": "cordova-plugin-nativestorage@2.2.2",
+  "_shasum": "8d965876956c9ad463472eb1b58f8e4e813a717a",
+  "_from": "cordova-plugin-nativestorage@>=2.2.2 <3.0.0",
+  "_npmVersion": "2.15.9",
+  "_nodeVersion": "4.5.0",
+  "_npmUser": {
+    "name": "gillescallebaut",
+    "email": "gilles.callebaut.cs@gmail.com"
+  },
+  "dist": {
+    "shasum": "8d965876956c9ad463472eb1b58f8e4e813a717a",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-nativestorage/-/cordova-plugin-nativestorage-2.2.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "gillescallebaut",
+      "email": "gilles.callebaut.cs@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-nativestorage-2.2.2.tgz_1490706148771_0.056211588671430945"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-nativestorage/-/cordova-plugin-nativestorage-2.2.2.tgz"
+}

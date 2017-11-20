@@ -1,0 +1,57 @@
+{
+  "name": "cordova-plugin-crop",
+  "version": "0.3.1",
+  "description": "Crop an image in a Cordova app",
+  "cordova": {
+    "id": "cordova-plugin-crop",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeduan/cordova-plugin-crop.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "image",
+    "image manipulation",
+    "crop"
+  ],
+  "license": "MIT",
+  "gitHead": "9c1740ff404b14529d6ce98c103f07f58fced55e",
+  "bugs": {
+    "url": "https://github.com/jeduan/cordova-plugin-crop/issues"
+  },
+  "homepage": "https://github.com/jeduan/cordova-plugin-crop#readme",
+  "_id": "cordova-plugin-crop@0.3.1",
+  "scripts": {},
+  "_shasum": "a5336fbef0e896256f1b380ad79291c4cf63f2be",
+  "_from": "cordova-plugin-crop@>=0.3.1 <0.4.0",
+  "_npmVersion": "3.10.2",
+  "_nodeVersion": "6.3.0",
+  "_npmUser": {
+    "name": "jeduan",
+    "email": "jeduan@gmail.com"
+  },
+  "dist": {
+    "shasum": "a5336fbef0e896256f1b380ad79291c4cf63f2be",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-crop/-/cordova-plugin-crop-0.3.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jeduan",
+      "email": "jeduan@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-crop-0.3.1.tgz_1468264754937_0.6045253530610353"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-crop/-/cordova-plugin-crop-0.3.1.tgz"
+}
