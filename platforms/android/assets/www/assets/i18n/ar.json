@@ -140,5 +140,21 @@
   "REPLYWRITE": "Write Reply",
   "SHARE": "Share",
   "COPY_LINK": "Copy Link",
-  "REPORT": "Report"
+  "REPORT": "Report",
+  "LINK_POST_COPY_CLIPBOARD": "the link for the post is copied to the clipboard",
+  "POSTED_NEW_POSTING": " just posted a new posting",
+  "SENT_1_1_MESSAGE": " sent 1:1 message",
+  "ADDED_ME_AS_FRIEND": " added me as a friend",
+  "COMMENTED_ON_MY_POSTING": " commented on my posting",
+  "REQUIRED": "Required",
+  "NICKNAME_INPUT": "Nickname Input",
+  "Member_TYPE": "Member type",
+  "NORMAL_MEMBER": "normal member",
+  "BUSINESS_MEMBER": "business member",
+  "MY_PICTURE": "My Picture",
+  "NOTICES": "Notices",
+  "Care_PICTURE": "Care Picture",
+  "COPY_PROFILE_URL": "Copy Profile Url",
+  "CHANGE_PWD": "Change PW",
+  "LINK_PROFILE_COPY_CLIPBOARD": "the link for the profile is copied to the clipboard"
 }

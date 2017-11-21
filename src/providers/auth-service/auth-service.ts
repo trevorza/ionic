@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
-
 /*
   Generated class for the AuthServiceProvider provider.
 
@@ -15,8 +14,17 @@ export class AuthServiceProvider {
     console.log('Hello AuthServiceProvider Provider');
   }
 
+  public login(){
+    localStorage.setItem('logged_in', '1');
+  }
+
+  public logout(){
+    localStorage.clear();
+  }
+
   public authenticated() {
-    return false;
+    const logged = localStorage.getItem('logged_in');
+    return logged == '1';
   };
 
 }

@@ -83379,6 +83379,32 @@ ion-app.ios listing-page .grid-categories .category-item .category-heading .head
   font-size: 7vw;
 }
 
+login-page .login-content {
+  background-color: white;
+}
+
+login-page .login-content .alt-options .user-content-segment .segment-button {
+  border-radius: 0px;
+  border: none;
+}
+
+login-page .login-content .alt-options .user-content-segment .segment-button:not(:last-child) {
+  border-right: solid 2px rgba(194, 194, 194, 0.3);
+}
+
+login-page .login-content .alt-options .user-content-segment .segment-button.segment-activated {
+  color: #ae75e7;
+  background-color: transparent;
+}
+
+login-page .login-content .alt-options .user-content-segment .segment-button {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #c2c2c2;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
 login-page .login-content .alt-options .button {
   margin: 0px;
   padding: 0px;
@@ -83400,20 +83426,61 @@ login-page .login-content .alt-options .forgot-button .button-inner {
   -ms-flex-pack: start;
 }
 
-login-page .login-content .alt-options .signup-button {
-  font-weight: 500;
-  color: #ae75e7;
+login-page .google-action-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40px;
+  background-color: #4285f4;
+  border-radius: 5;
 }
 
-login-page .login-content .alt-options .signup-button .button-inner {
-  -webkit-box-pack: end;
-  box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
-  justify-content: flex-end;
-  -ms-flex-pack: end;
+login-page .google-action-span {
+  color: white;
+  text-align: center;
+}
+
+login-page .cred-input-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+login-page .cred-icon {
+  min-width: 30px;
+  max-width: 30px;
+  text-align: center;
+}
+
+login-page .cred-input {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+login-page .nickname-input-item {
+  background-color: #f1f1f1;
+}
+
+login-page .nickname-input {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+login-page .action-button {
+  background-color: #ea5323;
 }
 
 maps-page .map-row {

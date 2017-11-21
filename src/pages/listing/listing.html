@@ -3,21 +3,20 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-row>
-      <ion-col width-80 *ngIf="!authService.authenticated()">
+    <div style="display: flex;
+		align-items: center;">
+      <span style="flex: 1;">
         <ion-searchbar [showCancelButton]="shouldShowCancel" [(ngModel)]="searchText"></ion-searchbar>
-      </ion-col>
-      <ion-col width-20 *ngIf="!authService.authenticated()">
+      </span>
+       
+      <span>
         <a><img src="../../assets/images/homeHeader/target.png"/></a>
-      </ion-col>
-      <ion-col width-65 *ngIf="authService.authenticated()">
-        <ion-searchbar [showCancelButton]="shouldShowCancel" [(ngModel)]="searchText"></ion-searchbar>
-      </ion-col>
-      <ion-col width-35 *ngIf="authService.authenticated()">
-        <a (click)="onNotificationPage()"><img src="../../assets/images/homeHeader/target.png"/></a>
+      </span>
+      
+      <span *ngIf="authService.authenticated()">
         <a (click)="onNotificationPage()"><img src="../../assets/images/homeHeader/envelope.png"/></a>
-      </ion-col>
-    </ion-row>
+      </span>
+    </div>
   </ion-navbar>
 </ion-header>
 

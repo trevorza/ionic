@@ -1,11 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, MenuController, Nav, App, ToastController } from 'ionic-angular';
+import { Platform, MenuController, Nav, App, ToastController, Events } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Observable } from 'rxjs/Observable';
 
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
-
+import { ProfilePage } from '../pages/profile/profile';
 import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { FormsPage } from '../pages/forms/forms';
 import { LayoutsPage } from '../pages/layouts/layouts';
@@ -44,7 +44,8 @@ export class MyApp {
     public statusBar: StatusBar,
     public translate: TranslateService,
     public toastCtrl: ToastController,
-    public authService: AuthServiceProvider
+    public authService: AuthServiceProvider,
+    public events: Events
   ) {
     translate.setDefaultLang('en');
     translate.use('ko');
@@ -86,7 +87,7 @@ export class MyApp {
         ).subscribe(data => {
           if (this.authService.authenticated()) {
             this.pages = [
-              { title: data[0], icon: 'person', component: TabsNavigationPage },
+              { title: data[0], icon: 'person', component: ProfilePage },
               { title: data[1], icon: 'create', component: FormsPage },
               { title: data[2], icon: 'code', component: FunctionalitiesPage },
               { title: data[3], icon: 'grid', component: LayoutsPage },
@@ -104,6 +105,35 @@ export class MyApp {
         });
       });
 
+    events.subscribe('authenticate', () => {
+      Observable.forkJoin(
+          this.translate.get('PROFILE'),
+          this.translate.get('CHATTING'),
+          this.translate.get('EVENT_BLOG'),
+          this.translate.get('FREQ_QUESTIONS'),
+          this.translate.get('CUSTOMER_CENTER'),
+          this.translate.get('LOGIN_SIGNUP')
+        ).subscribe(data => {
+          if (this.authService.authenticated()) {
+            this.pages = [
+              { title: data[0], icon: 'person', component: ProfilePage },
+              { title: data[1], icon: 'create', component: FormsPage },
+              { title: data[2], icon: 'code', component: FunctionalitiesPage },
+              { title: data[3], icon: 'grid', component: LayoutsPage },
+              { title: data[4], icon: 'settings', component: SettingsPage }
+            ];
+          } else {
+            this.pages = [
+              { title: data[5], icon: 'person', component: LoginPage },
+              { title: 'Forms', icon: 'create', component: undefined },
+              { title: data[2], icon: 'code', component: FunctionalitiesPage },
+              { title: data[3], icon: 'grid', component: LayoutsPage },
+              { title: data[4], icon: 'settings', component: SettingsPage }
+            ];
+          }
+        });
+      
+    });
   }
 
   ionViewEnter(){

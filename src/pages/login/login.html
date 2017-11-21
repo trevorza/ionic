@@ -19,29 +19,80 @@
 
   <div [ngSwitch]="displayTab">
     <div *ngSwitchCase="'login'">
-      <button ion-button block class="google-auth-button" (click)="doGoogleLogin()">Log in with Google</button>
+      
       <form class="login-form auth-form" [formGroup]="login" (ngSubmit)="doLogin()">
-        <ion-item>
-          <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+
+      <ion-item no-lines no-padding>
+        <a (click)="doGoogleLogin()">
+        <div class="google-action-button">
+          <img src="../../assets/images/social/google.png"/>
+          <font class="google-action-span">&nbsp; LOG IN WITH GOOGLE</font>
+        </div></a>
+      </ion-item>
+      <p class="auth-divider">
+        Or
+      </p>
+      
+        <ion-item no-lines class="cred-input-item">
+          <ion-label  class="cred-icon"><ion-icon  name='person' color="#aeaeae"></ion-icon></ion-label>
+          <ion-input type="email" placeholder="yours@example.com" formControlName="email" class="cred-input"></ion-input>
         </ion-item>
-        <show-hide-container>
-          <ion-item>
-            <ion-input type="password" placeholder="Password" formControlName="password" show-hide-input></ion-input>
+
+        <br>
+      
+          <ion-item  no-lines class="cred-input-item">
+            <ion-label class="cred-icon"><ion-icon  name='lock' color="#aeaeae"></ion-icon></ion-label>
+            <ion-input type="password" placeholder="Password" formControlName="password" class="cred-input"></ion-input>
           </ion-item>
-        </show-hide-container>
         <button ion-button block clear class="forgot-button" (click)="goToForgotPassword()">{{'FORGOT_PASSWORD?' | translate }}</button>
         
       </form>
     </div>
     <div *ngSwitchCase="'signup'">
+      <form class="login-form auth-form" [formGroup]="login" (ngSubmit)="doLogin()">
+
+      <ion-item no-lines no-padding>
+        <div class="google-action-button">
+          <img src="../../assets/images/social/google.png"/>
+          <font class="google-action-span">&nbsp; SIGN UP WITH GOOGLE</font>
+        </div>
+      </ion-item>
+      <p class="auth-divider">
+        Or
+      </p>
       
+        <ion-item no-lines class="cred-input-item">
+          <ion-label  class="cred-icon"><ion-icon  name='person' color="#aeaeae"></ion-icon></ion-label>
+          <ion-input type="email" placeholder="yours@example.com" formControlName="email" class="cred-input"></ion-input>
+        </ion-item>
+
+        <br>
+      
+          <ion-item  no-lines class="cred-input-item">
+            <ion-label class="cred-icon"><ion-icon  name='lock' color="#aeaeae"></ion-icon></ion-label>
+            <ion-input type="password" placeholder="Password" formControlName="password" class="cred-input"></ion-input>
+          </ion-item>
+
+          <ion-item  no-lines class="nickname-input-item">
+            <ion-input type="text" placeholder="{{'NICKNAME_INPUT' | translate}}({{'REQUIRED' | translate}})" formControlName="nickname" class="nickname-input"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>{{'Member_TYPE' | translate}}({{'REQUIRED' | translate}})</ion-label>
+            <ion-select formControlName="memberType">
+              <ion-option value="normal">{{'NORMAL_MEMBER' | translate}}</ion-option>
+              <ion-option value="business">{{'BUSINESS_MEMBER' | translate}}</ion-option>
+            </ion-select>
+          </ion-item>
+        
+      </form>
     </div>
   </div>
 </ion-content>
 
 <ion-footer>
-  <button *ngIf="displayTab == 'login'" ion-button block class="auth-action-button login-button" type="submit" [disabled]="!login.valid">{{'LOG_IN' | translate}}</button>
+  <button *ngIf="displayTab == 'login'" ion-button block class="action-button" type="submit" (click)="doLogin()">{{'LOG_IN' | translate}}</button>
 
-  <button *ngIf="displayTab == 'signup'" ion-button block class="auth-action-button login-button" type="submit" [disabled]="!login.valid">{{'SIGN_UP' | translate}}</button>
+  <button *ngIf="displayTab == 'signup'" ion-button block class="action-button" type="submit">{{'SIGN_UP' | translate}}</button>
 
 </ion-footer>

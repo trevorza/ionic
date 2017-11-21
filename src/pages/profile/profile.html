@@ -1,6 +1,14 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>{{'PROFILE' | translate}}</ion-title>
+    <div style="display: flex; align-items: center;">
+      <ion-title style="flex: 1;"><font style="text-align: center;">{{'PROFILE' | translate}}</font></ion-title>
+      <span *ngIf="authService.authenticated()">
+        <a (click)="onNotificationPage()"><img src="../../assets/images/homeHeader/envelope.png"/></a>
+      </span>
+      <span>
+        <a (click)="onClickMenu()"><img src="../../assets/images/homeHeader/menu.png"/></a>
+      </span>
+    </div>
   </ion-navbar>
 </ion-header>
 
@@ -48,16 +56,19 @@
       </ion-col>
     </ion-row>
     <ion-segment class="user-content-segment" [(ngModel)]="display" (ionChange)="onSegmentChanged($event)">
-      <ion-segment-button value="grid" (ionSelect)="onSegmentSelected($event)">
-        {{'GRID' | translate}}
+      <ion-segment-button value="myphoto" (ionSelect)="onSegmentSelected($event)">
+        {{'MY_PICTURE' | translate}}
       </ion-segment-button>
-      <ion-segment-button value="list" (ionSelect)="onSegmentSelected($event)">
-        {{'LIST' | translate}}
+      <ion-segment-button value="notices" (ionSelect)="onSegmentSelected($event)">
+        {{'NOTICES' | translate}}
+      </ion-segment-button>
+      <ion-segment-button value="carephoto" (ionSelect)="onSegmentSelected($event)">
+        {{'Care_PICTURE' | translate}}
       </ion-segment-button>
     </ion-segment>
   </div>
   <div [ngSwitch]="display" class="user-content">
-    <div *ngSwitchCase="'list'" class="list-view">
+    <div *ngSwitchCase="'myphoto'" class="list-view">
       <div class="list-item" *ngFor="let post of profile.posts">
         <span class="item-date">{{post.date}}</span>
         <ion-card>
@@ -90,7 +101,7 @@
         </ion-card>
       </div>
     </div>
-    <div *ngSwitchCase="'grid'" class="grid-view">
+    <div *ngSwitchCase="'notices'" class="grid-view">
       <ion-row wrap class="grid-row">
         <ion-col width-33 class="grid-item" *ngFor="let post of profile.posts">
           <preload-image [ratio]="{w:1, h:1}" [src]="post.image" title="ion2FullApp"></preload-image>
