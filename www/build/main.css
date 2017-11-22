@@ -83483,6 +83483,182 @@ login-page .action-button {
   background-color: #ea5323;
 }
 
+map-type-page .listing-header .notiNumber {
+  background-image: uri("../../assets/images/homeHeader/envelope.png");
+}
+
+map-type-page .listing-content .image-heading {
+  height: 150px;
+}
+
+map-type-page .listing-content .image-heading .bg-overlay {
+  z-index: 1;
+  background-color: rgba(102, 102, 102, 0.6);
+}
+
+map-type-page .listing-content .image-heading ion-spinner {
+  z-index: 2;
+}
+
+map-type-page .listing-content .image-heading ion-spinner * {
+  fill: #FFFFFF !important;
+}
+
+map-type-page .listing-content .image-heading .heading-row {
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+map-type-page .listing-content .image-heading .heading-row .main-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  margin: 0px;
+  font-size: 10vw;
+}
+
+map-type-page .listing-content #map {
+  width: 100%;
+  height: 100%;
+}
+
+map-type-page .listing-content .categories-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: #c2c2c2;
+  margin: 8px 16px 16px;
+}
+
+map-type-page .listing-content .horizontal-categories {
+  border-bottom: 10px solid #f7f7f7;
+  -webkit-box-shadow: inset 0 -0.5px 0 0 #c2c2c2;
+  box-shadow: inset 0 -0.5px 0 0 #c2c2c2;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+map-type-page .listing-content .horizontal-categories .scroll-content {
+  position: relative;
+  contain: style layout;
+}
+
+map-type-page .listing-content .horizontal-categories preload-image {
+  border-radius: 50%;
+}
+
+map-type-page .listing-content .horizontal-categories preload-image img {
+  border-radius: 50%;
+}
+
+map-type-page .listing-content .horizontal-categories .categories-row {
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+map-type-page .listing-content .horizontal-categories .categories-row::after {
+  content: '';
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10px;
+  -ms-flex: 0 0 10px;
+  flex: 0 0 10px;
+  max-width: 10px;
+}
+
+map-type-page .listing-content .horizontal-categories .selectedCategory {
+  border-width: 2px;
+  border-style: solid;
+  border-color: yellow;
+}
+
+map-type-page .listing-content .horizontal-categories .horizontal-item {
+  padding: 0px 0px 0px 10px;
+}
+
+map-type-page .listing-content .grid-categories {
+  padding: 0px 5px;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+map-type-page .listing-content .grid-categories .category-item {
+  padding: 0px 5px 10px;
+}
+
+map-type-page .listing-content .grid-categories .category-item .category-heading {
+  padding-bottom: 100%;
+}
+
+map-type-page .listing-content .grid-categories .category-item .category-heading .bg-overlay {
+  z-index: 1;
+  background-color: rgba(102, 102, 102, 0.6);
+}
+
+map-type-page .listing-content .grid-categories .category-item .category-heading ion-spinner {
+  z-index: 2;
+}
+
+map-type-page .listing-content .grid-categories .category-item .category-heading ion-spinner * {
+  fill: #FFFFFF !important;
+}
+
+map-type-page .listing-content .grid-categories .category-item .category-heading .heading-row {
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+map-type-page .listing-content .grid-categories .category-item .category-heading .heading-row .category-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+
+ion-app.ios map-type-page .listing-header .header-logo {
+  width: 34vw;
+  margin: 0px auto;
+}
+
+ion-app.ios map-type-page .grid-categories .category-item .category-heading .heading-row .category-title {
+  font-size: 7vw;
+}
+
 maps-page .map-row {
   height: 100%;
   margin: 0px !important;
@@ -83982,14 +84158,16 @@ profile-page .profile-content .user-details .user-main-data-row .social-presence
 profile-page .profile-content .user-details .user-main-data-row .social-presence-item .social-presence-value {
   margin: 0px;
   font-size: 2.2rem;
+  color: black;
 }
 
 profile-page .profile-content .user-details .user-main-data-row .social-presence-item .social-presence-title {
   margin: 0px;
-  font-size: 1.2rem;
+  font-size: 110%;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0.2px;
+  color: #333333;
 }
 
 profile-page .profile-content .user-details .user-bio-row {
@@ -84105,6 +84283,27 @@ profile-page .profile-content .user-content .grid-view .grid-row {
 
 profile-page .profile-content .user-content .grid-view .grid-row .grid-item {
   padding: 0px 3px 6px;
+}
+
+profile-page .social-img {
+  width: 40px;
+  height: 40px;
+}
+
+profile-page .social-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 ion-app.ios profile-page .user-content-segment .segment-button:hover:not(.segment-activated) {
@@ -84369,6 +84568,15 @@ ion-app.wp schedule-page .schedule-segment .segment-button {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+page-search .icon-size {
+  font-size: 400%;
+}
+
+page-search #map {
+  width: 100%;
+  height: 100%;
 }
 
 settings-page .settings-content {

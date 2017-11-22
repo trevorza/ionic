@@ -61,15 +61,17 @@ profile-page {
 					{
 						margin: 0px;
 						font-size: 2.2rem;
+						color: black;
 					}
 
 					.social-presence-title
 					{
 						margin: 0px;
-						font-size: 1.2rem;
+						font-size: 110%;
 						font-weight: 400;
 						line-height: 1.1;
 						letter-spacing: 0.2px;
+						color: #333333;
 					}
 				}
 			}
@@ -161,5 +163,13 @@ profile-page {
 
 			}
 		}
+	}
+	.social-img{
+		width: 40px;
+		height: 40px;
+	}
+	.social-group{
+		display: flex; align-items: center; justify-content: space-between;
+		padding: 20px;
 	}
 }

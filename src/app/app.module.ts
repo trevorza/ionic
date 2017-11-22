@@ -28,9 +28,13 @@ import { List2Page } from '../pages/list-2/list-2';
 import { GridPage } from '../pages/grid/grid';
 import { FormLayoutPage } from '../pages/form-layout/form-layout';
 import { FiltersPage } from '../pages/filters/filters';
+import { MapTypePage } from '../pages/map-type/map-type';
 import { TermsOfServicePage } from '../pages/terms-of-service/terms-of-service';
 import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
 import { FormValidationsPage } from '../pages/form-validations/form-validations';
+
+import { SearchPage } from '../pages/search/search';
+import { SearchResultPage } from '../pages/search-result/search-result';
 
 import { PreloadImage } from '../components/preload-image/preload-image';
 import { BackgroundImage } from '../components/background-image/background-image';
@@ -43,6 +47,7 @@ import { GoogleMap } from '../components/google-map/google-map';
 
 import { FeedService } from '../pages/feed/feed.service';
 import { ListingService } from '../pages/listing/listing.service';
+import { MapTypeService } from '../pages/map-type/map-type.service';
 import { ProfileService } from '../pages/profile/profile.service';
 import { NotificationsService } from '../pages/notifications/notifications.service';
 import { CommentsService } from '../pages/comments/comments.service';
@@ -135,7 +140,10 @@ export function createTranslateLoader(http: Http) {
     ColorRadio,
     CounterInput,
     Rating,
-    GoogleMap
+    GoogleMap,
+    MapTypePage,
+    SearchPage,
+    SearchResultPage
   ],
   imports: [
     BrowserModule,
@@ -189,7 +197,10 @@ export function createTranslateLoader(http: Http) {
     TwitterLoginPage,
 		AdsPage,
 		FormValidationsPage,
-		VideoPlaylistPage
+    VideoPlaylistPage,
+    MapTypePage,
+    SearchPage,
+    SearchResultPage
   ],
   providers: [
     FeedService,
@@ -200,6 +211,7 @@ export function createTranslateLoader(http: Http) {
     List1Service,
     List2Service,
     ScheduleService,
+    MapTypeService,
 
     FacebookLoginService,
     GoogleLoginService,

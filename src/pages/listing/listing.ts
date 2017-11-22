@@ -17,6 +17,9 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 
 import { NotificationsPage } from '../notifications/notifications';
 
+import { SearchPage } from '../search/search';
+
+
 @Component({
   selector: 'listing-page',
   templateUrl: 'listing.html',
@@ -201,6 +204,12 @@ export class ListingPage {
   onNotificationPage(){
     this.menu.close();
     this.app.getRootNav().push(NotificationsPage);
+  }
+
+  onSearchbarFocus(){
+    console.log('---focus---');
+    this.menu.close();
+    this.app.getRootNav().push(SearchPage);
   }
 
 }

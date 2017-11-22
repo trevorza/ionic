@@ -22,14 +22,14 @@
         <ion-row class="social-presence-row">
           <ion-col width-50 class="social-presence-item">
             <a (click)="goToFollowersList()">
+              <ion-icon name='heart' color="danger" style="font-size: 200%;"></ion-icon>
               <h2 class="social-presence-value">{{profile.followers.length}}</h2>
-              <h4 class="social-presence-title">{{'FOLLOWERS' | translate }}</h4>
             </a>
           </ion-col>
           <ion-col width-50 class="social-presence-item">
             <a (click)="goToFollowingList()">
-              <h2 class="social-presence-value">{{profile.following.length}}</h2>
-              <h4 class="social-presence-title">{{'FOLLOWING' | translate }}</h4>
+              <ion-icon name='star' color="#333333" style="font-size: 200%;"></ion-icon>
+              <h4 class="social-presence-title">business</h4>
             </a>
           </ion-col>
         </ion-row>
@@ -42,6 +42,45 @@
         </ion-row>
       </ion-col>
     </ion-row>
+
+    <div class="social-group">
+      <span>
+        <a (click)="onChatting()">
+          <img src="../../assets/images/social/chatting.png" class="social-img" />
+        </a>
+      </span>
+      <span>
+        <a (click)="onChatting()">
+          <img src="../../assets/images/social/telephone.jpg" class="social-img" />
+        </a>
+      </span>
+      <span>
+        <a (click)="onChatting()">
+          <img src="../../assets/images/social/website.png" class="social-img" />
+        </a>
+      </span>
+      <span>
+        <a (click)="onChatting()">
+          <img src="../../assets/images/social/facebook.png" class="social-img" />
+        </a>
+      </span>
+      <span>
+        <a (click)="onChatting()">
+          <img src="../../assets/images/social/instagram.png" class="social-img" />
+        </a>
+      </span>
+      <span>
+        <a (click)="onChatting()">
+          <img src="../../assets/images/social/blog.jpeg" class="social-img" />
+        </a>
+      </span>
+      <span>
+        <a (click)="onChatting()">
+          <img src="../../assets/images/social/twitter.png" class="social-img" />
+        </a>
+      </span>
+    </div>
+
     <ion-row wrap class="user-bio-row">
       <ion-col no-padding width-50>
         <h2 class="user-name">{{profile.user.name}}</h2>

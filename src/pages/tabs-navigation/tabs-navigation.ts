@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ListingPage } from '../listing/listing';
 import { ProfilePage } from '../profile/profile';
 import { NotificationsPage } from '../notifications/notifications';
+import { MapTypePage } from '../map-type/map-type';
 
 @Component({
   selector: 'tabs-navigation',
@@ -17,7 +18,7 @@ export class TabsNavigationPage {
 
   constructor() {
     this.tab1Root = ListingPage;
-    this.tab2Root = ProfilePage;
+    this.tab2Root = MapTypePage;
     this.tab3Root = NotificationsPage;
     this.tab4Root = ProfilePage;
     this.tab5Root = NotificationsPage;
