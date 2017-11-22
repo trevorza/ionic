@@ -84570,6 +84570,15 @@ ion-app.wp schedule-page .schedule-segment .segment-button {
   flex: 1;
 }
 
+page-search .icon-size {
+  font-size: 400%;
+}
+
+page-search #map {
+  width: 100%;
+  height: 100%;
+}
+
 settings-page .settings-content {
   background-color: #f7f7f7;
 }

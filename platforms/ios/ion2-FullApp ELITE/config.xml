@@ -156,4 +156,7 @@
     <feature name="Clipboard">
         <param name="ios-package" value="CDVClipboard" />
     </feature>
+    <feature name="ImagePicker">
+        <param name="ios-package" value="SOSPicker" />
+    </feature>
 </widget>

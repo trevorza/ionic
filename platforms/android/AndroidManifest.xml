@@ -21,6 +21,7 @@
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sharing_paths" />
         </provider>
         <meta-data android:name="io.fabric.ApiKey" android:value="6da298eb1112d28ba03183d50236498db4b7380e" />
+        <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light" />
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

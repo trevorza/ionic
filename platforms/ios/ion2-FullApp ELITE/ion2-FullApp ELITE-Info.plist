@@ -121,5 +121,7 @@
       <key>Kits</key>
       <array/>
     </dict>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string></string>
   </dict>
 </plist>

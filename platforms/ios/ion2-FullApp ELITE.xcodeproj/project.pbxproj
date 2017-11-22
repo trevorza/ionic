@@ -85,6 +85,32 @@
 		FC166784649E4EE995575347 /* PEPhotoCropEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69004DC844CD43FCAC3FB30E /* PEPhotoCropEditor.bundle */; };
 		FC34160D55384C70874F6289 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119AD8B4129E4E848ADC9D19 /* EventKitUI.framework */; };
 		B118DFDCD246407BAA3F1864 /* CDVClipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F384819304184B85FA1F1 /* CDVClipboard.m */; };
+		19FEC3A1A9C24A949307755E /* SOSPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AF83CBE8004880BD0201EE /* SOSPicker.m */; };
+		E96FEF7AC3FB4C96BCB2EE9B /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 742216CC6852434083534E9C /* UIImage+fixOrientation.m */; };
+		0C04F7DB58DB4FC696C4B340 /* GMAlbumsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB48F8AAACF8448C9ED2C70E /* GMAlbumsViewCell.m */; };
+		EFB1626A7F0F4A7E809A0DBF /* GMAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FA1E55C5034778944D2A87 /* GMAlbumsViewController.m */; };
+		01A96B2421FA4CA5B66EAE11 /* GMFetchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE2A5CB25CE407284D04288 /* GMFetchItem.m */; };
+		2435366644E446409D717149 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE274B0B3F204CE397C5F77A /* GMGridViewCell.m */; };
+		F66EB6E30BFF4F83A41563A1 /* GMGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF2B84A09E24B8DB86577AC /* GMGridViewController.m */; };
+		CB7EAD884AFA44DFA944F6C1 /* GMImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8D60127674832BCA45FB6 /* GMImagePickerController.m */; };
+		F04085F2BDFF4B07A53BB283 /* PSYBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE3A5A3365A46448A15729A /* PSYBlockTimer.m */; };
+		E579200D61AB4F34A21312D9 /* GMPHAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B528BF2B3704420B283BD30 /* GMPHAsset.m */; };
+		5ABA34396C434B7CA38DA4F8 /* GMEmptyFolder@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375897A55B9B4A36B75EEFDB /* GMEmptyFolder@1x.png */; };
+		F86F751895064E65B145F05D /* GMEmptyFolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB4A77DC7B9841B29CC5F4AB /* GMEmptyFolder@2x.png */; };
+		991BF9B2F94648C39CBDC3A6 /* GMSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3356E0EDF1654FFBACA99B1F /* GMSelected.png */; };
+		FD38BE1DC58F45EABEE22CAE /* GMSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F28015757ED74248B88E4B7F /* GMSelected@2x.png */; };
+		50875811582B4E0191FA352D /* GMVideoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E9DF9ABCCA4AB2B906A621 /* GMVideoIcon.png */; };
+		69F07CF0610C48079DD1C9D8 /* GMVideoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62BDC69D500F4F488571C3EA /* GMVideoIcon@2x.png */; };
+		656DF2976BEF4C4B95F72747 /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D9EBBB93FE1C434AB2E22FDB /* ca.lproj */; };
+		FAD3C8DEB8CE4579AD4EC525 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EBD8F98E7DDD465C9A9CE6FD /* de.lproj */; };
+		412C09E4158C40E6AB68E604 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2AC925A74BD24892A9851383 /* en.lproj */; };
+		C80F4B691EC744A1A9F720C4 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 98EBFEEB479C414BB02D6D6E /* es.lproj */; };
+		7889BEA1E2BD4948B8032C83 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3E78120C2906462FA62AF17D /* fr.lproj */; };
+		41A211339A7A4F8EBB7AF610 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8AA3B0E1618D43B0BB4A1196 /* it.lproj */; };
+		F407605DAA6B4E1E9BBD8CF0 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BB0818028E474013B4BC48A4 /* pt.lproj */; };
+		5254B1F29DF44C9E886353D1 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 86E0BD923A2748088A1447C2 /* zh-Hans.lproj */; };
+		B6B35FC2153B4C91BD426A29 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAF57B98A1546C2A3CA5567 /* Accelerate.framework */; };
+		B9E16BDA11314195847C1821 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4500DF71C8C1408091841FB4 /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +256,42 @@
 		FFB54EB4D1BC4237A01E569F /* PECropView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PECropView.m; path = "cordova-plugin-crop/PECropView.m"; sourceTree = "<group>"; };
 		834F384819304184B85FA1F1 /* CDVClipboard.m */ = {isa = PBXFileReference; name = "CDVClipboard.m"; path = "cordova-clipboard/CDVClipboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		14FC0FE5E2C0424B8D0CF01B /* CDVClipboard.h */ = {isa = PBXFileReference; name = "CDVClipboard.h"; path = "cordova-clipboard/CDVClipboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		20AF83CBE8004880BD0201EE /* SOSPicker.m */ = {isa = PBXFileReference; name = "SOSPicker.m"; path = "com.synconset.imagepicker/SOSPicker.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		742216CC6852434083534E9C /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; name = "UIImage+fixOrientation.m"; path = "com.synconset.imagepicker/UIImage+fixOrientation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CB48F8AAACF8448C9ED2C70E /* GMAlbumsViewCell.m */ = {isa = PBXFileReference; name = "GMAlbumsViewCell.m"; path = "com.synconset.imagepicker/GMAlbumsViewCell.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F7FA1E55C5034778944D2A87 /* GMAlbumsViewController.m */ = {isa = PBXFileReference; name = "GMAlbumsViewController.m"; path = "com.synconset.imagepicker/GMAlbumsViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5FE2A5CB25CE407284D04288 /* GMFetchItem.m */ = {isa = PBXFileReference; name = "GMFetchItem.m"; path = "com.synconset.imagepicker/GMFetchItem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		DE274B0B3F204CE397C5F77A /* GMGridViewCell.m */ = {isa = PBXFileReference; name = "GMGridViewCell.m"; path = "com.synconset.imagepicker/GMGridViewCell.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		DDF2B84A09E24B8DB86577AC /* GMGridViewController.m */ = {isa = PBXFileReference; name = "GMGridViewController.m"; path = "com.synconset.imagepicker/GMGridViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5DF8D60127674832BCA45FB6 /* GMImagePickerController.m */ = {isa = PBXFileReference; name = "GMImagePickerController.m"; path = "com.synconset.imagepicker/GMImagePickerController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		BCE3A5A3365A46448A15729A /* PSYBlockTimer.m */ = {isa = PBXFileReference; name = "PSYBlockTimer.m"; path = "com.synconset.imagepicker/PSYBlockTimer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0B528BF2B3704420B283BD30 /* GMPHAsset.m */ = {isa = PBXFileReference; name = "GMPHAsset.m"; path = "com.synconset.imagepicker/GMPHAsset.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		28045CCC15C043869B8CE436 /* SOSPicker.h */ = {isa = PBXFileReference; name = "SOSPicker.h"; path = "com.synconset.imagepicker/SOSPicker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7B20FA33AA0641DCA4BFB12A /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; name = "UIImage+fixOrientation.h"; path = "com.synconset.imagepicker/UIImage+fixOrientation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0DF8C0082DBC41588D90E290 /* GMAlbumsViewCell.h */ = {isa = PBXFileReference; name = "GMAlbumsViewCell.h"; path = "com.synconset.imagepicker/GMAlbumsViewCell.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3E35F98361E748FAA215D00C /* GMAlbumsViewController.h */ = {isa = PBXFileReference; name = "GMAlbumsViewController.h"; path = "com.synconset.imagepicker/GMAlbumsViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7D1B6D9259B94282959B016C /* GMFetchItem.h */ = {isa = PBXFileReference; name = "GMFetchItem.h"; path = "com.synconset.imagepicker/GMFetchItem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7D330BD0050F4CC0A5E9C004 /* GMGridViewCell.h */ = {isa = PBXFileReference; name = "GMGridViewCell.h"; path = "com.synconset.imagepicker/GMGridViewCell.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F88A908EAC324C889AFFD3BB /* GMGridViewController.h */ = {isa = PBXFileReference; name = "GMGridViewController.h"; path = "com.synconset.imagepicker/GMGridViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B0297BCE2F3C47DB970943AF /* GMImagePickerController.h */ = {isa = PBXFileReference; name = "GMImagePickerController.h"; path = "com.synconset.imagepicker/GMImagePickerController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2D57AEF8B13043F9A4ACCD06 /* PSYBlockTimer.h */ = {isa = PBXFileReference; name = "PSYBlockTimer.h"; path = "com.synconset.imagepicker/PSYBlockTimer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		94F8227873C943F7B71DA1FA /* GMPHAsset.h */ = {isa = PBXFileReference; name = "GMPHAsset.h"; path = "com.synconset.imagepicker/GMPHAsset.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		375897A55B9B4A36B75EEFDB /* GMEmptyFolder@1x.png */ = {isa = PBXFileReference; name = "GMEmptyFolder@1x.png"; path = "GMEmptyFolder@1x.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB4A77DC7B9841B29CC5F4AB /* GMEmptyFolder@2x.png */ = {isa = PBXFileReference; name = "GMEmptyFolder@2x.png"; path = "GMEmptyFolder@2x.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3356E0EDF1654FFBACA99B1F /* GMSelected.png */ = {isa = PBXFileReference; name = "GMSelected.png"; path = "GMSelected.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F28015757ED74248B88E4B7F /* GMSelected@2x.png */ = {isa = PBXFileReference; name = "GMSelected@2x.png"; path = "GMSelected@2x.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		09E9DF9ABCCA4AB2B906A621 /* GMVideoIcon.png */ = {isa = PBXFileReference; name = "GMVideoIcon.png"; path = "GMVideoIcon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		62BDC69D500F4F488571C3EA /* GMVideoIcon@2x.png */ = {isa = PBXFileReference; name = "GMVideoIcon@2x.png"; path = "GMVideoIcon@2x.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D9EBBB93FE1C434AB2E22FDB /* ca.lproj */ = {isa = PBXFileReference; name = "ca.lproj"; path = "ca.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBD8F98E7DDD465C9A9CE6FD /* de.lproj */ = {isa = PBXFileReference; name = "de.lproj"; path = "de.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2AC925A74BD24892A9851383 /* en.lproj */ = {isa = PBXFileReference; name = "en.lproj"; path = "en.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		98EBFEEB479C414BB02D6D6E /* es.lproj */ = {isa = PBXFileReference; name = "es.lproj"; path = "es.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E78120C2906462FA62AF17D /* fr.lproj */ = {isa = PBXFileReference; name = "fr.lproj"; path = "fr.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8AA3B0E1618D43B0BB4A1196 /* it.lproj */ = {isa = PBXFileReference; name = "it.lproj"; path = "it.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BB0818028E474013B4BC48A4 /* pt.lproj */ = {isa = PBXFileReference; name = "pt.lproj"; path = "pt.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86E0BD923A2748088A1447C2 /* zh-Hans.lproj */ = {isa = PBXFileReference; name = "zh-Hans.lproj"; path = "zh-Hans.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7EAF57B98A1546C2A3CA5567 /* Accelerate.framework */ = {isa = PBXFileReference; name = "Accelerate.framework"; path = "System/Library/Frameworks/Accelerate.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4500DF71C8C1408091841FB4 /* Photos.framework */ = {isa = PBXFileReference; name = "Photos.framework"; path = "System/Library/Frameworks/Photos.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +343,8 @@
 				087136CD2415423784CDDFE1 /* TwitterCore.framework in Frameworks */,
 				77A871EB43EE400780E50848 /* Accounts.framework in Frameworks */,
 				5D0FF88C9A7C485C898D1DEF /* CoreData.framework in Frameworks */,
+				B6B35FC2153B4C91BD426A29 /* Accelerate.framework in Frameworks */,
+				B9E16BDA11314195847C1821 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +410,20 @@
 				108933A020AD49AE87743C08 /* CDVNotification.bundle */,
 				69004DC844CD43FCAC3FB30E /* PEPhotoCropEditor.bundle */,
 				E45D27B4A39A4E63A760FA6F /* TwitterKitResources.bundle */,
+				375897A55B9B4A36B75EEFDB /* GMEmptyFolder@1x.png */,
+				DB4A77DC7B9841B29CC5F4AB /* GMEmptyFolder@2x.png */,
+				3356E0EDF1654FFBACA99B1F /* GMSelected.png */,
+				F28015757ED74248B88E4B7F /* GMSelected@2x.png */,
+				09E9DF9ABCCA4AB2B906A621 /* GMVideoIcon.png */,
+				62BDC69D500F4F488571C3EA /* GMVideoIcon@2x.png */,
+				D9EBBB93FE1C434AB2E22FDB /* ca.lproj */,
+				EBD8F98E7DDD465C9A9CE6FD /* de.lproj */,
+				2AC925A74BD24892A9851383 /* en.lproj */,
+				98EBFEEB479C414BB02D6D6E /* es.lproj */,
+				3E78120C2906462FA62AF17D /* fr.lproj */,
+				8AA3B0E1618D43B0BB4A1196 /* it.lproj */,
+				BB0818028E474013B4BC48A4 /* pt.lproj */,
+				86E0BD923A2748088A1447C2 /* zh-Hans.lproj */,
 			);
 			name = Resources;
 			path = "ion2-FullApp ELITE/Resources";
@@ -397,6 +475,8 @@
 				6316404223C54B64AC8B7574 /* TwitterCore.framework */,
 				DE65E7A712784F4DA5C12ADE /* Accounts.framework */,
 				848D6872273E4E798DA53918 /* CoreData.framework */,
+				7EAF57B98A1546C2A3CA5567 /* Accelerate.framework */,
+				4500DF71C8C1408091841FB4 /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -475,6 +555,26 @@
 				791BB15805454C5AAD72BBBA /* TwitterConnect.h */,
 				834F384819304184B85FA1F1 /* CDVClipboard.m */,
 				14FC0FE5E2C0424B8D0CF01B /* CDVClipboard.h */,
+				20AF83CBE8004880BD0201EE /* SOSPicker.m */,
+				742216CC6852434083534E9C /* UIImage+fixOrientation.m */,
+				CB48F8AAACF8448C9ED2C70E /* GMAlbumsViewCell.m */,
+				F7FA1E55C5034778944D2A87 /* GMAlbumsViewController.m */,
+				5FE2A5CB25CE407284D04288 /* GMFetchItem.m */,
+				DE274B0B3F204CE397C5F77A /* GMGridViewCell.m */,
+				DDF2B84A09E24B8DB86577AC /* GMGridViewController.m */,
+				5DF8D60127674832BCA45FB6 /* GMImagePickerController.m */,
+				BCE3A5A3365A46448A15729A /* PSYBlockTimer.m */,
+				0B528BF2B3704420B283BD30 /* GMPHAsset.m */,
+				28045CCC15C043869B8CE436 /* SOSPicker.h */,
+				7B20FA33AA0641DCA4BFB12A /* UIImage+fixOrientation.h */,
+				0DF8C0082DBC41588D90E290 /* GMAlbumsViewCell.h */,
+				3E35F98361E748FAA215D00C /* GMAlbumsViewController.h */,
+				7D1B6D9259B94282959B016C /* GMFetchItem.h */,
+				7D330BD0050F4CC0A5E9C004 /* GMGridViewCell.h */,
+				F88A908EAC324C889AFFD3BB /* GMGridViewController.h */,
+				B0297BCE2F3C47DB970943AF /* GMImagePickerController.h */,
+				2D57AEF8B13043F9A4ACCD06 /* PSYBlockTimer.h */,
+				94F8227873C943F7B71DA1FA /* GMPHAsset.h */,
 			);
 			name = Plugins;
 			path = "ion2-FullApp ELITE/Plugins";
@@ -569,6 +669,20 @@
 				3BA59F98171A4078BE3F132E /* CDVNotification.bundle in Resources */,
 				FC166784649E4EE995575347 /* PEPhotoCropEditor.bundle in Resources */,
 				7B754876E9014898B860512D /* TwitterKitResources.bundle in Resources */,
+				5ABA34396C434B7CA38DA4F8 /* GMEmptyFolder@1x.png in Resources */,
+				F86F751895064E65B145F05D /* GMEmptyFolder@2x.png in Resources */,
+				991BF9B2F94648C39CBDC3A6 /* GMSelected.png in Resources */,
+				FD38BE1DC58F45EABEE22CAE /* GMSelected@2x.png in Resources */,
+				50875811582B4E0191FA352D /* GMVideoIcon.png in Resources */,
+				69F07CF0610C48079DD1C9D8 /* GMVideoIcon@2x.png in Resources */,
+				656DF2976BEF4C4B95F72747 /* ca.lproj in Resources */,
+				FAD3C8DEB8CE4579AD4EC525 /* de.lproj in Resources */,
+				412C09E4158C40E6AB68E604 /* en.lproj in Resources */,
+				C80F4B691EC744A1A9F720C4 /* es.lproj in Resources */,
+				7889BEA1E2BD4948B8032C83 /* fr.lproj in Resources */,
+				41A211339A7A4F8EBB7AF610 /* it.lproj in Resources */,
+				F407605DAA6B4E1E9BBD8CF0 /* pt.lproj in Resources */,
+				5254B1F29DF44C9E886353D1 /* zh-Hans.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +740,16 @@
 				7E627478C1454ECBB52A794D /* IonicKeyboard.m in Sources */,
 				5D8596D47B50432898ED82F3 /* TwitterConnect.m in Sources */,
 				B118DFDCD246407BAA3F1864 /* CDVClipboard.m in Sources */,
+				19FEC3A1A9C24A949307755E /* SOSPicker.m in Sources */,
+				E96FEF7AC3FB4C96BCB2EE9B /* UIImage+fixOrientation.m in Sources */,
+				0C04F7DB58DB4FC696C4B340 /* GMAlbumsViewCell.m in Sources */,
+				EFB1626A7F0F4A7E809A0DBF /* GMAlbumsViewController.m in Sources */,
+				01A96B2421FA4CA5B66EAE11 /* GMFetchItem.m in Sources */,
+				2435366644E446409D717149 /* GMGridViewCell.m in Sources */,
+				F66EB6E30BFF4F83A41563A1 /* GMGridViewController.m in Sources */,
+				CB7EAD884AFA44DFA944F6C1 /* GMImagePickerController.m in Sources */,
+				F04085F2BDFF4B07A53BB283 /* PSYBlockTimer.m in Sources */,
+				E579200D61AB4F34A21312D9 /* GMPHAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

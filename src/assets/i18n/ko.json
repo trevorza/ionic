@@ -154,5 +154,11 @@
   "Care_PICTURE": "관심사진",
   "COPY_PROFILE_URL": "프로필URL 복사 ",
   "CHANGE_PWD": "비밀번호 변경",
-  "LINK_PROFILE_COPY_CLIPBOARD": "프로필의 링크주소가 클립보드에 복사되였습니다."
+  "LINK_PROFILE_COPY_CLIPBOARD": "프로필의 링크주소가 클립보드에 복사되였습니다.",
+  "NICKNAME": "닉네임",
+  "PHONE_NUMBER": "전화번호",
+  "SEX": "성별",
+  "SEX_MALE": "남자",
+  "SEX_FEMALE": "녀자",
+  "SEX_NOT_SEL": "선택안함"
 }

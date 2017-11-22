@@ -23,6 +23,10 @@
             {
               "xml": "<meta-data android:name=\"io.fabric.ApiKey\" android:value=\"6da298eb1112d28ba03183d50236498db4b7380e\" />",
               "count": 1
+            },
+            {
+              "xml": "<activity android:label=\"@string/multi_app_name\" android:name=\"com.synconset.MultiImageChooserActivity\" android:theme=\"@style/Theme.AppCompat.Light\"></activity>",
+              "count": 1
             }
           ],
           "/*": [
@@ -54,7 +58,7 @@
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-              "count": 1
+              "count": 2
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
@@ -191,6 +195,10 @@
             {
               "xml": "<feature name=\"Clipboard\"><param name=\"android-package\" value=\"com.verso.cordova.clipboard.Clipboard\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"ImagePicker\"><param name=\"android-package\" value=\"com.synconset.ImagePicker\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -282,6 +290,9 @@
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     },
     "cordova-clipboard": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "com.synconset.imagepicker": {
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     }
   },
@@ -490,6 +501,14 @@
       "clobbers": [
         "cordova.plugins.clipboard"
       ]
+    },
+    {
+      "id": "com.synconset.imagepicker.ImagePicker",
+      "file": "plugins/com.synconset.imagepicker/www/imagepicker.js",
+      "pluginId": "com.synconset.imagepicker",
+      "clobbers": [
+        "plugins.imagePicker"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -515,6 +534,7 @@
     "cordova-plugin-x-socialsharing": "5.2.1",
     "ionic-plugin-keyboard": "2.2.1",
     "twitter-connect-plugin": "0.6.0",
-    "cordova-clipboard": "1.1.0"
+    "cordova-clipboard": "1.1.0",
+    "com.synconset.imagepicker": "2.1.8"
   }
 }

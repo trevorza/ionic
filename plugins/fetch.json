@@ -199,5 +199,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "com.synconset.imagepicker": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/Telerik-Verified-Plugins/ImagePicker.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

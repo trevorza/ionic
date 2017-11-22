@@ -70,6 +70,9 @@
     <feature name="Clipboard">
         <param name="android-package" value="com.verso.cordova.clipboard.Clipboard" />
     </feature>
+    <feature name="ImagePicker">
+        <param name="android-package" value="com.synconset.ImagePicker" />
+    </feature>
     <name>ion2-FullApp ELITE</name>
     <description>The Best Ionic 2 Starter app - ELITE version</description>
     <author email="hi@ionicthemes.com" href="https://ionicthemes.com/">Ionic Themes</author>

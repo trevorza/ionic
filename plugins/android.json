@@ -60,6 +60,9 @@
     },
     "cordova-clipboard": {
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "com.synconset.imagepicker": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     }
   },
   "dependent_plugins": {

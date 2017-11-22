@@ -115,6 +115,10 @@
             {
               "xml": "<feature name=\"Clipboard\"><param name=\"ios-package\" value=\"CDVClipboard\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"ImagePicker\"><param name=\"ios-package\" value=\"SOSPicker\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -174,6 +178,12 @@
           "Fabric": [
             {
               "xml": "<dict><key>APIKey</key><string>6da298eb1112d28ba03183d50236498db4b7380e</string><key>Kits</key><array /></dict>",
+              "count": 1
+            }
+          ],
+          "NSPhotoLibraryUsageDescription": [
+            {
+              "xml": "<string> </string>",
               "count": 1
             }
           ]
@@ -254,6 +264,10 @@
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     },
     "cordova-clipboard": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "com.synconset.imagepicker": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": " ",
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     }
   },
@@ -472,6 +486,14 @@
       "clobbers": [
         "cordova.plugins.clipboard"
       ]
+    },
+    {
+      "id": "com.synconset.imagepicker.ImagePicker",
+      "file": "plugins/com.synconset.imagepicker/www/imagepicker.js",
+      "pluginId": "com.synconset.imagepicker",
+      "clobbers": [
+        "plugins.imagePicker"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -497,6 +519,7 @@
     "cordova-plugin-x-socialsharing": "5.2.1",
     "ionic-plugin-keyboard": "2.2.1",
     "twitter-connect-plugin": "0.6.0",
-    "cordova-clipboard": "1.1.0"
+    "cordova-clipboard": "1.1.0",
+    "com.synconset.imagepicker": "2.1.8"
   }
 }

@@ -93,6 +93,8 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "twitter-connect-plugin/elite-twitter.gradle"
+apply from: "com.synconset.imagepicker/elite-ignorelinterrors.gradle"
+apply from: "com.synconset.imagepicker/elite-androidtarget.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -260,6 +262,7 @@ dependencies {
     compile "com.facebook.android:facebook-android-sdk:4.+"
     compile "com.google.android.gms:play-services-auth:+"
     compile "com.google.android.gms:play-services-identity:+"
+    compile "com.android.support:appcompat-v7:23+"
     // SUB-PROJECT DEPENDENCIES END
 }
 

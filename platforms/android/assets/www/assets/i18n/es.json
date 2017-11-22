@@ -156,5 +156,11 @@
   "Care_PICTURE": "Care Picture",
   "COPY_PROFILE_URL": "Copy Profile Url",
   "CHANGE_PWD": "Change PW",
-  "LINK_PROFILE_COPY_CLIPBOARD": "the link for the profile is copied to the clipboard"
+  "LINK_PROFILE_COPY_CLIPBOARD": "the link for the profile is copied to the clipboard",
+  "NICKNAME": "nickname",
+  "PHONE_NUMBER": "phone number",
+  "SEX": "sex",
+  "SEX_MALE": "Male",
+  "SEX_FEMALE": "Female",
+  "SEX_NOT_SEL": "not willing to display"
 }
