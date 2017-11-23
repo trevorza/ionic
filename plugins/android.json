@@ -7,6 +7,15 @@
     "files": {}
   },
   "installed_plugins": {
+    "com.synconset.imagepicker": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-clipboard": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
     "cordova-plugin-admob-free": {
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     },
@@ -51,17 +60,14 @@
     "cordova-plugin-x-socialsharing": {
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     },
     "twitter-connect-plugin": {
       "FABRIC_KEY": "6da298eb1112d28ba03183d50236498db4b7380e",
-      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
-    },
-    "cordova-clipboard": {
-      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
-    },
-    "com.synconset.imagepicker": {
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     }
   },

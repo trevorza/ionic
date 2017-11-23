@@ -1,0 +1,72 @@
+{
+  "name": "cordova-open-native-settings",
+  "version": "1.4.1",
+  "description": "Native settings opener for Cordova",
+  "cordova": {
+    "id": "cordova-open-native-settings",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guyromb/Cordova-open-native-settings.git"
+  },
+  "keywords": [
+    "native-settings",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=4.0.0"
+    }
+  ],
+  "author": {
+    "name": "Guy Rombaut",
+    "email": "admin@gsrweb.net"
+  },
+  "contributors": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guyromb/Cordova-open-native-settings/issues"
+  },
+  "homepage": "https://github.com/guyromb/Cordova-open-native-settings#readme",
+  "gitHead": "8066c95f579eb36e53594c2f3bb37d8347c367d9",
+  "_id": "cordova-open-native-settings@1.4.1",
+  "scripts": {},
+  "_shasum": "5b7937f81f2b4c7eb9cd03132259d33fa77457c2",
+  "_from": "cordova-open-native-settings@latest",
+  "_npmVersion": "3.10.10",
+  "_nodeVersion": "6.11.0",
+  "_npmUser": {
+    "name": "guyromb",
+    "email": "admin@gsrweb.net"
+  },
+  "dist": {
+    "shasum": "5b7937f81f2b4c7eb9cd03132259d33fa77457c2",
+    "tarball": "https://registry.npmjs.org/cordova-open-native-settings/-/cordova-open-native-settings-1.4.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "guyromb",
+      "email": "admin@gsrweb.net"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-open-native-settings-1.4.1.tgz_1500213362099_0.11562135978601873"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova-open-native-settings/-/cordova-open-native-settings-1.4.1.tgz"
+}

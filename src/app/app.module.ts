@@ -5,7 +5,11 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Http } from '@angular/http';
 
+import { Diagnostic } from '@ionic-native/diagnostic';
+
 import { Clipboard } from '@ionic-native/clipboard';
+
+import { OpenNativeSettings } from '@ionic-native/open-native-settings';
 
 import { ListingPage } from '../pages/listing/listing';
 import { FeedPage } from '../pages/feed/feed';
@@ -16,6 +20,8 @@ import { LoginPage } from '../pages/login/login';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { CommentsPage } from '../pages/comments/comments';
 import { ProfilePage } from '../pages/profile/profile';
+import { OtherProfilePage } from '../pages/other-profile/other-profile';
+import { AppSettingPage } from '../pages/app-setting/app-setting';
 import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { SettingsPage } from '../pages/settings/settings';
@@ -49,6 +55,7 @@ import { FeedService } from '../pages/feed/feed.service';
 import { ListingService } from '../pages/listing/listing.service';
 import { MapTypeService } from '../pages/map-type/map-type.service';
 import { ProfileService } from '../pages/profile/profile.service';
+import { OtherProfileService } from '../pages/other-profile/other-profile.service';
 import { NotificationsService } from '../pages/notifications/notifications.service';
 import { CommentsService } from '../pages/comments/comments.service';
 import { List1Service } from '../pages/list-1/list-1.service';
@@ -79,6 +86,7 @@ import { Crop } from '@ionic-native/crop';
 import { EmailComposer } from '@ionic-native/email-composer';
 
 // Functionalities
+import { ChangePasswordPage } from '../pages/change-password/change-password';
 import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
 import { MapsPage } from '../pages/maps/maps';
 import { FacebookLoginPage } from '../pages/facebook-login/facebook-login';
@@ -143,7 +151,10 @@ export function createTranslateLoader(http: Http) {
     GoogleMap,
     MapTypePage,
     SearchPage,
-    SearchResultPage
+    SearchResultPage,
+    ChangePasswordPage,
+    AppSettingPage,
+    OtherProfilePage
   ],
   imports: [
     BrowserModule,
@@ -200,12 +211,16 @@ export function createTranslateLoader(http: Http) {
     VideoPlaylistPage,
     MapTypePage,
     SearchPage,
-    SearchResultPage
+    SearchResultPage,
+    ChangePasswordPage,
+    AppSettingPage,
+    OtherProfilePage
   ],
   providers: [
     FeedService,
     ListingService,
     ProfileService,
+    OtherProfileService,
     NotificationsService,
     CommentsService,
     List1Service,
@@ -235,7 +250,10 @@ export function createTranslateLoader(http: Http) {
 		ImagePicker,
 		Crop,
 		EmailComposer,
-    AuthServiceProvider
+    AuthServiceProvider,
+
+    Diagnostic,
+    OpenNativeSettings
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

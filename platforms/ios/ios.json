@@ -119,6 +119,14 @@
             {
               "xml": "<feature name=\"ImagePicker\"><param name=\"ios-package\" value=\"SOSPicker\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"NativeSettings\"><param name=\"ios-package\" value=\"NativeSettings\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Diagnostic\"><param name=\"ios-package\" value=\"Diagnostic\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -155,6 +163,10 @@
             {
               "xml": "<array><dict><key>CFBundleTypeRole</key><string>Editor</string><key>CFBundleURLName</key><string>REVERSED_CLIENT_ID</string><key>CFBundleURLSchemes</key><array><string>com.googleusercontent.apps.1092390853283-icg6lqtcg6k270de9c8tv3i7qehlqtor</string></array></dict></array>",
               "count": 1
+            },
+            {
+              "xml": "<array><dict><key>CFBundleTypeRole</key><string>Editor</string><key>CFBundleURLSchemes</key><array><string>prefs</string></array></dict></array>",
+              "count": 1
             }
           ],
           "NSAppTransportSecurity": [
@@ -166,6 +178,10 @@
           "NSLocationWhenInUseUsageDescription": [
             {
               "xml": "<string> </string>",
+              "count": 1
+            },
+            {
+              "xml": "<string>This app requires access to your location when the screen is on and the app is displayed.</string>",
               "count": 1
             }
           ],
@@ -184,6 +200,64 @@
           "NSPhotoLibraryUsageDescription": [
             {
               "xml": "<string> </string>",
+              "count": 1
+            },
+            {
+              "xml": "<string>This app requires photo library access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSLocationAlwaysAndWhenInUseUsageDescription": [
+            {
+              "xml": "<string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>",
+              "count": 1
+            }
+          ],
+          "NSLocationAlwaysUsageDescription": [
+            {
+              "xml": "<string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>",
+              "count": 1
+            }
+          ],
+          "NSCalendarsUsageDescription": [
+            {
+              "xml": "<string>This app requires calendar access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSBluetoothPeripheralUsageDescription": [
+            {
+              "xml": "<string>This app requires bluetooth access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSMicrophoneUsageDescription": [
+            {
+              "xml": "<string>This app requires microphone access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string>This app requires camera access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSMotionUsageDescription": [
+            {
+              "xml": "<string>This app requires motion detection access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSContactsUsageDescription": [
+            {
+              "xml": "<string>This app requires contacts access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSRemindersUsageDescription": [
+            {
+              "xml": "<string>This app requires reminders access to function properly.</string>",
               "count": 1
             }
           ]
@@ -268,6 +342,12 @@
     },
     "com.synconset.imagepicker": {
       "PHOTO_LIBRARY_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova.plugins.diagnostic": {
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     }
   },
@@ -494,6 +574,22 @@
       "clobbers": [
         "plugins.imagePicker"
       ]
+    },
+    {
+      "id": "cordova-open-native-settings.Settings",
+      "file": "plugins/cordova-open-native-settings/www/settings.js",
+      "pluginId": "cordova-open-native-settings",
+      "clobbers": [
+        "cordova.plugins.settings"
+      ]
+    },
+    {
+      "id": "cordova.plugins.diagnostic.Diagnostic",
+      "file": "plugins/cordova.plugins.diagnostic/www/ios/diagnostic.js",
+      "pluginId": "cordova.plugins.diagnostic",
+      "clobbers": [
+        "cordova.plugins.diagnostic"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -520,6 +616,8 @@
     "ionic-plugin-keyboard": "2.2.1",
     "twitter-connect-plugin": "0.6.0",
     "cordova-clipboard": "1.1.0",
-    "com.synconset.imagepicker": "2.1.8"
+    "com.synconset.imagepicker": "2.1.8",
+    "cordova-open-native-settings": "1.4.1",
+    "cordova.plugins.diagnostic": "3.7.2"
   }
 }

@@ -80026,6 +80026,17 @@ ads-page .ads-footer .remove-ad-button {
   font-weight: 500;
 }
 
+page-app-setting .setting-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 comments-page .comments-content .comments-divider {
   font-size: 1.2rem;
   font-weight: 500;
@@ -81420,13 +81431,25 @@ followers-page .followers-content .followers-list .list-item .item-inner ion-lab
 followers-page .followers-content .followers-list .list-item .item-inner .relation-button {
   margin: 0px;
   padding: 0px 16px;
-  height: inherit;
   -webkit-align-self: stretch;
   align-self: stretch;
   -ms-flex-item-align: stretch;
   border-radius: 0px 6px 6px 0px;
   background-color: #3897f0;
   width: 24%;
+}
+
+followers-page .followers-content .followers-list .list-item .item-inner .remove-button {
+  margin: 0px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #333333;
+  border-width: 1px;
+}
+
+followers-page .followers-content .followers-list .list-item .item-inner .remove-button .remove-image {
+  width: 80%;
+  height: 80%;
 }
 
 followers-page .followers-content .tab-span {
@@ -83508,6 +83531,15 @@ map-type-page .listing-header .notiNumber {
   background-image: uri("../../assets/images/homeHeader/envelope.png");
 }
 
+map-type-page .listing-content .list-button {
+  position: absolute;
+  bottom: 5%;
+  width: 20%;
+  height: 5%;
+  left: 40%;
+  border-radius: 20px;
+}
+
 map-type-page .listing-content .image-heading {
   height: 150px;
 }
@@ -83554,7 +83586,7 @@ map-type-page .listing-content .image-heading .heading-row .main-title {
 
 map-type-page .listing-content #map {
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 
 map-type-page .listing-content .categories-title {
@@ -84327,6 +84359,97 @@ profile-page .social-group {
   padding: 20px;
 }
 
+profile-page .notification-item {
+  padding: 12px;
+  border: none;
+  -webkit-box-shadow: inset 0 -0.5px 0 0 rgba(153, 153, 153, 0.8);
+  box-shadow: inset 0 -0.5px 0 0 rgba(153, 153, 153, 0.8);
+  -webkit-box-align: start;
+  box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+}
+
+profile-page .notification-item ion-avatar {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 16%;
+  -ms-flex: 0 0 16%;
+  flex: 0 0 16%;
+  max-width: 16%;
+  margin: 0px;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  margin: 0 16px 0 0 !important;
+}
+
+profile-page .notification-item ion-avatar .user-image {
+  border-radius: 50%;
+}
+
+profile-page .notification-item .item-inner {
+  padding: 0px;
+  padding-left: 12px;
+  border: none;
+  margin-top: 8px;
+}
+
+profile-page .notification-item .item-inner ion-label {
+  margin: 0px;
+}
+
+profile-page .notification-item .item-body-unread {
+  background-color: #DEEBF7;
+}
+
+profile-page .notification-item .item-body-unread p {
+  word-break: break-all;
+  white-space: normal;
+}
+
+profile-page .notification-item .item-body-read p {
+  word-break: break-all;
+  white-space: normal;
+}
+
+profile-page .notification-item .item-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #ae75e7;
+  margin-bottom: 4px;
+}
+
+profile-page .notification-item .item-description {
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  color: #c2c2c2;
+  text-overflow: initial;
+  overflow: initial;
+  white-space: initial;
+}
+
+profile-page .notification-item .item-time {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #c2c2c2;
+  margin: 0px;
+  padding-left: 8px;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+}
+
+profile-page .notification-item .item-time .del-button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+}
+
 ion-app.ios profile-page .user-content-segment .segment-button:hover:not(.segment-activated) {
   background-color: transparent;
 }
@@ -84595,9 +84718,38 @@ page-search .icon-size {
   font-size: 400%;
 }
 
+page-search .selected {
+  color: #333333;
+}
+
+page-search .unselected {
+  color: #a5a5a5;
+}
+
 page-search #map {
   width: 100%;
   height: 100%;
+}
+
+page-search .map-container {
+  width: 100%;
+  height: 90%;
+}
+
+page-search .tab-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 settings-page .settings-content {

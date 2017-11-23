@@ -63,6 +63,12 @@
     "com.synconset.imagepicker": {
       "PHOTO_LIBRARY_USAGE_DESCRIPTION": " ",
       "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.startapplabs.ion2FullApp.elite"
     }
   },
   "dependent_plugins": {

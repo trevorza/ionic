@@ -141,11 +141,113 @@
       </div>
     </div>
     <div *ngSwitchCase="'notices'" class="grid-view">
-      <ion-row wrap class="grid-row">
-        <ion-col width-33 class="grid-item" *ngFor="let post of profile.posts">
+      
+        <ion-item class="notification-item" *ngFor="let notification of curNotifications">
+          <a (click)="toNotificationPage()">
+            <ion-avatar item-left>
+              <preload-image class="user-image" [ratio]="{w:1, h:1}" [src]="notification.image"></preload-image>
+            </ion-avatar>
+          </a>
+          <div class="item-body-unread" *ngIf="!notification.isRead">
+            <p class="item-title">
+      
+              {{notification.name}}
+              <font style="color: black;" *ngIf="notification.msgType==1">{{'POSTED_NEW_POSTING' | translate}}</font>
+              <font style="color: black;" *ngIf="notification.msgType==2">{{'SENT_1_1_MESSAGE' | translate}}</font>
+              <font style="color: black;" *ngIf="notification.msgType==3">{{'ADDED_ME_AS_FRIEND' | translate}}</font>
+              <font style="color: black;" *ngIf="notification.msgType==4">{{'COMMENTED_ON_MY_POSTING' | translate}}</font>
+      
+            </p>
+          </div>
+          <div class="item-body-read" *ngIf="notification.isRead">
+            <p class="item-title">
+      
+              {{notification.name}}
+              <font style="color: black;" *ngIf="notification.msgType==1">{{'POSTED_NEW_POSTING' | translate}}</font>
+              <font style="color: black;" *ngIf="notification.msgType==2">{{'SENT_1_1_MESSAGE' | translate}}</font>
+              <font style="color: black;" *ngIf="notification.msgType==3">{{'ADDED_ME_AS_FRIEND' | translate}}</font>
+              <font style="color: black;" *ngIf="notification.msgType==4">{{'COMMENTED_ON_MY_POSTING' | translate}}</font>
+      
+            </p>
+          </div>
+          <ion-note class="item-time" item-right>
+            <div>
+              {{notification.date}}
+            </div>
+            <div>
+              <button icon-only ion-button clear small class="del-button">
+                <ion-icon name='close' color="dark"></ion-icon>
+              </button>
+            </div>
+          </ion-note>
+        </ion-item>
+
+    </div>
+    <div *ngSwitchCase="'carephoto'" class="grid-view">
+      <ion-item  *ngFor="let post of profile.posts">
+        <ion-row wrap class="grid-row">
           <preload-image [ratio]="{w:1, h:1}" [src]="post.image" title="ion2FullApp"></preload-image>
-        </ion-col>
-      </ion-row>
+        </ion-row>
+        <ion-row>
+          <ion-col width-75>
+            <a (click)="toProfile()">
+              model
+            </a>
+          </ion-col>
+          <ion-col width-25>
+            <p>{{post1.date}}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>{{post1.address}}</p>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row no-padding class="actions-row">
+          <ion-col no-padding width-30 text-left>
+            <button class="action-button" ion-button clear small icon-left (click)="likePoast(post)">
+              <ion-icon isActive="{{post.liked}}" name='heart' color="danger" *ngIf="post1.meLikes"></ion-icon>
+              <ion-icon isActive="{{post.liked}}" name='heart' color="dark" *ngIf="!post1.meLikes"></ion-icon>
+              {{post1.likesCount}} {{'LIKES' | translate}}
+            </button>
+          </ion-col>
+          <ion-col no-padding width-45 text-center>
+            <button class="action-button" ion-button clear small icon-left (click)="commentPost(post)">
+              <ion-icon name='chatbubbles' color="danger"></ion-icon>
+              {{post1.commentsCount}} {{'COMMENTS' | translate}}
+            </button>
+          </ion-col>
+          <ion-col no-padding width-25 text-right>
+            <button class="action-button" ion-button clear small icon-left (click)="sharePost(post)">
+              <ion-icon name='share-alt'></ion-icon>
+              {{'SHARE' | translate}}
+            </button>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col>
+            <p>
+              {{post1.comments[0].name}} {{': '}} {{post1.comments[0].comment}}
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>
+              {{post1.comments[1].name}} {{': '}} {{post1.comments[1].comment}}
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p>
+              {{post1.comments[2].name}} {{': '}} {{post1.comments[2].comment}}
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
     </div>
   </div>
 </ion-content>

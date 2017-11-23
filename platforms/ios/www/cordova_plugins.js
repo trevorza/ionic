@@ -221,6 +221,22 @@ module.exports = [
     "clobbers": [
       "plugins.imagePicker"
     ]
+  },
+  {
+    "id": "cordova-open-native-settings.Settings",
+    "file": "plugins/cordova-open-native-settings/www/settings.js",
+    "pluginId": "cordova-open-native-settings",
+    "clobbers": [
+      "cordova.plugins.settings"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic",
+    "file": "plugins/cordova.plugins.diagnostic/www/ios/diagnostic.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "clobbers": [
+      "cordova.plugins.diagnostic"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -249,7 +265,9 @@ module.exports.metadata =
   "ionic-plugin-keyboard": "2.2.1",
   "twitter-connect-plugin": "0.6.0",
   "cordova-clipboard": "1.1.0",
-  "com.synconset.imagepicker": "2.1.8"
+  "com.synconset.imagepicker": "2.1.8",
+  "cordova-open-native-settings": "1.4.1",
+  "cordova.plugins.diagnostic": "3.7.2"
 };
 // BOTTOM OF METADATA
 });

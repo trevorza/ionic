@@ -1,0 +1,70 @@
+{
+  "version": "3.7.2",
+  "name": "cordova.plugins.diagnostic",
+  "cordova_name": "Diagnostic",
+  "description": "Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth device settings.",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpa99c/cordova-diagnostic-plugin.git"
+  },
+  "issue": "https://github.com/dpa99c/cordova-diagnostic-plugin/issues",
+  "cordova": {
+    "id": "cordova.plugins.diagnostic",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "android",
+    "ios",
+    "windows",
+    "phonegap",
+    "diagnostic",
+    "wifi",
+    "location",
+    "gps",
+    "camera",
+    "bluetooth",
+    "settings"
+  ],
+  "types": "./cordova.plugins.diagnostic.d.ts",
+  "gitHead": "c0471da0778b1a463b8394c3b2cd4b17e5fde42c",
+  "bugs": {
+    "url": "https://github.com/dpa99c/cordova-diagnostic-plugin/issues"
+  },
+  "homepage": "https://github.com/dpa99c/cordova-diagnostic-plugin#readme",
+  "_id": "cordova.plugins.diagnostic@3.7.2",
+  "scripts": {},
+  "_shasum": "036d1ef950ee1f68cf6beb679f96452734e1b056",
+  "_from": "cordova.plugins.diagnostic@latest",
+  "_npmVersion": "4.2.0",
+  "_nodeVersion": "7.10.0",
+  "_npmUser": {
+    "name": "davealden",
+    "email": "dave@workingedge.co.uk"
+  },
+  "dist": {
+    "shasum": "036d1ef950ee1f68cf6beb679f96452734e1b056",
+    "tarball": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-3.7.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "davealden",
+      "email": "dave@workingedge.co.uk"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova.plugins.diagnostic-3.7.2.tgz_1510763580910_0.3025705467443913"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-3.7.2.tgz"
+}

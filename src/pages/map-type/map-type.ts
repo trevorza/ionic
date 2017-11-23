@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, App, LoadingController, MenuController, ActionSheetController, Platform, ToastController } from 'ionic-angular';
+import { NavController, App, LoadingController, MenuController, ActionSheetController, Platform, ToastController, AlertController } from 'ionic-angular';
 import { Clipboard } from '@ionic-native/clipboard';
-
+import { OpenNativeSettings } from '@ionic-native/open-native-settings';
 import { FeedPage } from '../feed/feed';
 import { CommentsPage } from '../comments/comments';
 import 'rxjs/Rx';
@@ -18,6 +18,8 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { NotificationsPage } from '../notifications/notifications';
 import { GoogleMap } from "../../components/google-map/google-map";
 import { GoogleMapsService } from "./maps.service";
+import { SearchResultPage } from '../search-result/search-result';
+import { Diagnostic } from '@ionic-native/diagnostic';
 
 @Component({
   selector: 'map-type-page',
@@ -50,9 +52,11 @@ export class MapTypePage {
     public platform: Platform,
     private clipboard: Clipboard,
     public socialSharing: SocialSharing,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    public alertCtrl: AlertController,
+    private diagnostic: Diagnostic,
+    private openNativeSettings: OpenNativeSettings
   ) {
-    console.log('---map type----');
     this.loading = this.loadingCtrl.create();
   }
 
@@ -65,9 +69,22 @@ export class MapTypePage {
         this.categories = data.categories;
         this.loading.dismiss();
       });
-
-    this.loadMap();
+    
+    this.checkGPS();
   }
+
+  checkGPS(){
+    this.diagnostic.isLocationAvailable().then((isAvailable) => {
+      console.log(isAvailable);
+      if (isAvailable) {
+        this.loadMap();
+        return;
+      } else {
+        this.showAlertController();
+      }
+    }).catch(e=>console.log(e));
+  }
+
   loadMap() {
 
     let latLng = new google.maps.LatLng(-34.9290, 138.6010);
@@ -82,6 +99,11 @@ export class MapTypePage {
 
   }
 
+  toList(){
+    this.menu.close();
+    this.app.getRootNav().push(SearchResultPage);
+  }
+
 
   onCategory(popular) {
     this.selectedCategory = popular.title;
@@ -91,5 +113,45 @@ export class MapTypePage {
   goToFeed(category: any) {
     console.log("Clicked goToFeed", category);
     this.nav.push(FeedPage, { category: category });
+  }
+
+  showAlertController(){
+    
+      Observable.forkJoin(
+        this.translate.get('GPS_INFO_IS_NOT_AVAILABLE'),
+        this.translate.get('CURRENT_LOCATION_CANT_BE_DETACTED'),
+        this.translate.get('CONFIRM'),
+        this.translate.get('CANCEL')
+      ).subscribe(data => {
+
+        let confirm = this.alertCtrl.create({
+          title: data[0],
+          message: data[1],
+          buttons: [
+            {
+              text: data[3],
+              handler: () => {
+                console.log('Disagree clicked');
+              }
+            },
+            {
+              text: data[2],
+              handler: () => {
+                this.diagnostic.requestLocationAuthorization("always")
+                .then(res => {
+                  console.log(res);
+                  if (res == "GRANTED") {
+                    this.loadMap();
+                  }
+                })
+                .catch(err => {console.log(err);});
+              }
+            }
+          ]
+        });
+        confirm.present();
+
+      });
+    
   }
 }

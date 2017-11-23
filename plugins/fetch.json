@@ -207,5 +207,21 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-open-native-settings": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-open-native-settings"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova.plugins.diagnostic": {
+    "source": {
+      "type": "registry",
+      "id": "cordova.plugins.diagnostic@^3.7.2"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

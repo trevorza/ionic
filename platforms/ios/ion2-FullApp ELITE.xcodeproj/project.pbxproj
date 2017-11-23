@@ -111,6 +111,10 @@
 		5254B1F29DF44C9E886353D1 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 86E0BD923A2748088A1447C2 /* zh-Hans.lproj */; };
 		B6B35FC2153B4C91BD426A29 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAF57B98A1546C2A3CA5567 /* Accelerate.framework */; };
 		B9E16BDA11314195847C1821 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4500DF71C8C1408091841FB4 /* Photos.framework */; };
+		8FED53AB948047B789525C70 /* NativeSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0F3EDC26741A885B16E1F /* NativeSettings.m */; };
+		E30C174F485E46C18B108E2F /* Diagnostic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464608D726348E2BF10DDF7 /* Diagnostic.m */; };
+		EB204A5A04D44B37989B7017 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA467DEAD1154E0CA60262A1 /* Contacts.framework */; };
+		E2BA1CD19FB94F3B94E2CD26 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA4D8FF04D94C3F8F3A7C15 /* UserNotifications.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +296,12 @@
 		86E0BD923A2748088A1447C2 /* zh-Hans.lproj */ = {isa = PBXFileReference; name = "zh-Hans.lproj"; path = "zh-Hans.lproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		7EAF57B98A1546C2A3CA5567 /* Accelerate.framework */ = {isa = PBXFileReference; name = "Accelerate.framework"; path = "System/Library/Frameworks/Accelerate.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		4500DF71C8C1408091841FB4 /* Photos.framework */ = {isa = PBXFileReference; name = "Photos.framework"; path = "System/Library/Frameworks/Photos.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		6FB0F3EDC26741A885B16E1F /* NativeSettings.m */ = {isa = PBXFileReference; name = "NativeSettings.m"; path = "cordova-open-native-settings/NativeSettings.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		39D03E4231834098B224B437 /* NativeSettings.h */ = {isa = PBXFileReference; name = "NativeSettings.h"; path = "cordova-open-native-settings/NativeSettings.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0464608D726348E2BF10DDF7 /* Diagnostic.m */ = {isa = PBXFileReference; name = "Diagnostic.m"; path = "cordova.plugins.diagnostic/Diagnostic.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		573BDC2AD6054CFA99EF7913 /* Diagnostic.h */ = {isa = PBXFileReference; name = "Diagnostic.h"; path = "cordova.plugins.diagnostic/Diagnostic.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DA467DEAD1154E0CA60262A1 /* Contacts.framework */ = {isa = PBXFileReference; name = "Contacts.framework"; path = "System/Library/Frameworks/Contacts.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		DBA4D8FF04D94C3F8F3A7C15 /* UserNotifications.framework */ = {isa = PBXFileReference; name = "UserNotifications.framework"; path = "System/Library/Frameworks/UserNotifications.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +355,8 @@
 				5D0FF88C9A7C485C898D1DEF /* CoreData.framework in Frameworks */,
 				B6B35FC2153B4C91BD426A29 /* Accelerate.framework in Frameworks */,
 				B9E16BDA11314195847C1821 /* Photos.framework in Frameworks */,
+				EB204A5A04D44B37989B7017 /* Contacts.framework in Frameworks */,
+				E2BA1CD19FB94F3B94E2CD26 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +489,8 @@
 				848D6872273E4E798DA53918 /* CoreData.framework */,
 				7EAF57B98A1546C2A3CA5567 /* Accelerate.framework */,
 				4500DF71C8C1408091841FB4 /* Photos.framework */,
+				DA467DEAD1154E0CA60262A1 /* Contacts.framework */,
+				DBA4D8FF04D94C3F8F3A7C15 /* UserNotifications.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -575,6 +589,10 @@
 				B0297BCE2F3C47DB970943AF /* GMImagePickerController.h */,
 				2D57AEF8B13043F9A4ACCD06 /* PSYBlockTimer.h */,
 				94F8227873C943F7B71DA1FA /* GMPHAsset.h */,
+				6FB0F3EDC26741A885B16E1F /* NativeSettings.m */,
+				39D03E4231834098B224B437 /* NativeSettings.h */,
+				0464608D726348E2BF10DDF7 /* Diagnostic.m */,
+				573BDC2AD6054CFA99EF7913 /* Diagnostic.h */,
 			);
 			name = Plugins;
 			path = "ion2-FullApp ELITE/Plugins";
@@ -750,6 +768,8 @@
 				CB7EAD884AFA44DFA944F6C1 /* GMImagePickerController.m in Sources */,
 				F04085F2BDFF4B07A53BB283 /* PSYBlockTimer.m in Sources */,
 				E579200D61AB4F34A21312D9 /* GMPHAsset.m in Sources */,
+				8FED53AB948047B789525C70 /* NativeSettings.m in Sources */,
+				E30C174F485E46C18B108E2F /* Diagnostic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
