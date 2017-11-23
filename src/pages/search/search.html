@@ -20,31 +20,31 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-  <div style="display: flex; align-items: center; justify-content: space-between;">
+  <div class="tab-container">
     <span>
       <a (click)="onClickTab(1)">
-        <ion-icon name="menu" class="icon-size"  color="blue;" *ngIf="selectedTab == 1"></ion-icon>
-        <ion-icon name="menu" class="icon-size" color="gray;" *ngIf="selectedTab != 1"></ion-icon>
+        <ion-icon name="menu" class="icon-size selected" *ngIf="selectedTab == 1"></ion-icon>
+        <ion-icon name="menu" class="icon-size unselected" *ngIf="selectedTab != 1"></ion-icon>
       </a>
     </span>
     <span>
       <a (click)="onClickTab(2)">
-        <ion-icon name="person" class="icon-size" color="blue;" *ngIf="selectedTab == 2"></ion-icon>
-        <ion-icon name="person" class="icon-size" color="gray;" *ngIf="selectedTab != 2"></ion-icon>
+        <ion-icon name="person" class="icon-size selected"  *ngIf="selectedTab == 2"></ion-icon>
+        <ion-icon name="person" class="icon-size unselected"  *ngIf="selectedTab != 2"></ion-icon>
       </a>
     </span>
     <span>
       <a (click)="onClickTab(3)">
-        <ion-icon name="water" class="icon-size" color="blue;" *ngIf="selectedTab == 3"></ion-icon>
-        <ion-icon name="water" class="icon-size" color="gray;" *ngIf="selectedTab != 3"></ion-icon>
+        <ion-icon name="water" class="icon-size selected" *ngIf="selectedTab == 3"></ion-icon>
+        <ion-icon name="water" class="icon-size unselected" *ngIf="selectedTab != 3"></ion-icon>
       </a>
     </span>
     <span>
       <a (click)="onClickTab(4)">
-        <ion-icon name="pin" class="icon-size" color="blue;" *ngIf="selectedTab == 4"></ion-icon>
-        <ion-icon name="pin" class="icon-size" color="gray;" *ngIf="selectedTab != 4"></ion-icon>
+        <ion-icon name="pin" class="icon-size selected" *ngIf="selectedTab == 4"></ion-icon>
+        <ion-icon name="pin" class="icon-size unselected" *ngIf="selectedTab != 4"></ion-icon>
       </a>
     </span>
   </div>
@@ -59,6 +59,9 @@
     </ion-list>
   </div>
 
-  <div #map id="map"*ngIf="selectedTab == 4"></div>
+  <div *ngIf="selectedTab == 4"  class="map-container">
+    <div #map id="map"></div>
+  </div>
+  
 
 </ion-content>

@@ -160,5 +160,6 @@
   "SEX": "성별",
   "SEX_MALE": "남자",
   "SEX_FEMALE": "녀자",
-  "SEX_NOT_SEL": "선택안함"
+  "SEX_NOT_SEL": "선택안함",
+  "ADD_FRIEND": "친구추가"
 }

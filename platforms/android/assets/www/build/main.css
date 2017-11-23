@@ -81350,10 +81350,10 @@ followers-page .followers-content .followers-list .list-item {
 
 followers-page .followers-content .followers-list .list-item ion-thumbnail {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 24%;
-  -ms-flex: 0 0 24%;
-  flex: 0 0 24%;
-  max-width: 24%;
+  -webkit-flex: 0 0 15%;
+  -ms-flex: 0 0 15%;
+  flex: 0 0 15%;
+  max-width: 15%;
   margin: 0px;
   padding: 8px;
 }
@@ -81425,21 +81425,42 @@ followers-page .followers-content .followers-list .list-item .item-inner .relati
   align-self: stretch;
   -ms-flex-item-align: stretch;
   border-radius: 0px 6px 6px 0px;
-  background-color: #ae75e7;
+  background-color: #3897f0;
   width: 24%;
 }
 
-followers-page .followers-content .followers-list .list-item .item-inner .relation-button.following {
-  background-color: #00e9d5;
+followers-page .followers-content .tab-span {
+  font-size: 200%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #5982a7;
+  border-style: solid;
+  margin: 5px;
 }
 
-followers-page .followers-content .followers-list .list-item .item-inner .relation-button.following ion-icon {
-  font-size: 4.2em;
+followers-page .followers-content .selected {
+  color: #ae75e7;
 }
 
-followers-page .followers-content .followers-list .list-item .item-inner .relation-button ion-icon {
-  font-size: 2.4em;
-  color: #FFFFFF;
+followers-page .followers-content .tabs-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px;
+}
+
+followers-page .followers-content .profile-image {
+  border-radius: 50%;
 }
 
 ion-app.md followers-page ion-searchbar .searchbar-input {

@@ -21,7 +21,7 @@ export class SearchPage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
 
-  selectedTab = 1;
+  selectedTab = 4;
 
   searchText: any;
 
@@ -56,6 +56,9 @@ export class SearchPage {
   onClickTab(value){
     this.selectedTab = value;
     console.log('----clicked----');
+    if (value == 4) {
+      this.loadMap();
+    }
   }
 
   onItem(item) {

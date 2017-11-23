@@ -56,19 +56,12 @@ export class ProfilePage {
       });
   }
 
-  goToFollowersList() {
+  goToFollowList() {
     // close the menu when clicking a link from the menu
     this.menu.close();
     this.app.getRootNav().push(FollowersPage, {
-      list: this.profile.followers
-    });
-  }
-
-  goToFollowingList() {
-    // close the menu when clicking a link from the menu
-    this.menu.close();
-    this.app.getRootNav().push(FollowersPage, {
-      list: this.profile.following
+      followers: this.profile.followers,
+      followings: this.profile.following
     });
   }
 
