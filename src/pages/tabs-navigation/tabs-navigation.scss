@@ -1,6 +1,7 @@
 tabs-navigation {
 	.tabbar
 	{
+		font-size: 300%;
 		background: color($colors, tabs-navigation, base) !important;
 		border-top-color: darken(color($colors, tabs-navigation, base), 6%) !important;
 

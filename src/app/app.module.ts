@@ -21,6 +21,15 @@ import { NotificationsPage } from '../pages/notifications/notifications';
 import { CommentsPage } from '../pages/comments/comments';
 import { ProfilePage } from '../pages/profile/profile';
 import { OtherProfilePage } from '../pages/other-profile/other-profile';
+import { ImageViewPage } from '../pages/imageview/imageview';
+import { ImageViewDetailPage } from '../pages/imageviewdetail/imageview-detail';
+import { WritingPage } from '../pages/writing/writing';
+import { WritingNormalPage } from '../pages/write-normal/write-normal';
+import { ChattingNoPage } from '../pages/chatting-no/chatting-no';
+import { ChattingYesPage } from '../pages/chatting-yes/chatting-yes';
+import { CameraPage } from '../pages/camera/camera';
+
+import { ImageEditPage } from '../pages/imageedit/imageedit';
 import { AppSettingPage } from '../pages/app-setting/app-setting';
 import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
@@ -41,6 +50,10 @@ import { FormValidationsPage } from '../pages/form-validations/form-validations'
 
 import { SearchPage } from '../pages/search/search';
 import { SearchResultPage } from '../pages/search-result/search-result';
+
+import { GalleryDetailPage } from '../pages/gallery-detail/gallery-detail';
+
+import { WritingAddPage } from '../pages/writing-add/writing-add';
 
 import { PreloadImage } from '../components/preload-image/preload-image';
 import { BackgroundImage } from '../components/background-image/background-image';
@@ -65,6 +78,8 @@ import { FacebookLoginService } from '../pages/facebook-login/facebook-login.ser
 import { GoogleLoginService } from '../pages/google-login/google-login.service';
 import { TwitterLoginService } from '../pages/twitter-login/twitter-login.service';
 import { GoogleMapsService } from '../pages/maps/maps.service';
+import { HelpPage } from '../pages/help/help';
+import { GalleryPage } from '../pages/gallery/gallery';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
@@ -84,6 +99,8 @@ import { AppRate } from '@ionic-native/app-rate';
 import { ImagePicker } from '@ionic-native/image-picker';
 import { Crop } from '@ionic-native/crop';
 import { EmailComposer } from '@ionic-native/email-composer';
+
+
 
 // Functionalities
 import { ChangePasswordPage } from '../pages/change-password/change-password';
@@ -154,7 +171,19 @@ export function createTranslateLoader(http: Http) {
     SearchResultPage,
     ChangePasswordPage,
     AppSettingPage,
-    OtherProfilePage
+    OtherProfilePage,
+    ImageViewPage,
+    ImageViewDetailPage,
+    WritingPage,
+    ImageEditPage,
+    WritingNormalPage,
+    ChattingNoPage,
+    ChattingYesPage,
+    CameraPage,
+    HelpPage,
+    GalleryPage,
+    GalleryDetailPage,
+    WritingAddPage
   ],
   imports: [
     BrowserModule,
@@ -214,7 +243,19 @@ export function createTranslateLoader(http: Http) {
     SearchResultPage,
     ChangePasswordPage,
     AppSettingPage,
-    OtherProfilePage
+    OtherProfilePage,
+    ImageViewPage,
+    ImageViewDetailPage,
+    WritingPage,
+    ImageEditPage,
+    WritingNormalPage,
+    ChattingNoPage,
+    ChattingYesPage,
+    CameraPage,
+    HelpPage,
+    GalleryPage,
+    GalleryDetailPage,
+    WritingAddPage
   ],
   providers: [
     FeedService,

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'SETTINGS' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button>
+        {{ 'SAVE' | translate }}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content">
+
+  <div #map id="map"></div>
+
+  <ion-row class="search-group">
+    <ion-col class="one-button">
+      <div class="button-content">
+        <ion-icon name="search"></ion-icon>
+        search
+      </div>
+    </ion-col>
+    <ion-col class="one-button">
+      <div class="button-content">
+        <ion-icon name="wifi"></ion-icon>
+        current
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-item>
+    <ion-label item-left>road</ion-label>
+    <ion-input type="text" [(ngModel)]="streetAddress"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label item-left>road</ion-label>
+    <ion-input type="text" [(ngModel)]="detailAddress"></ion-input>
+  </ion-item>
+
+  <ion-label>
+    Please input detailed address
+  </ion-label>
+
+</ion-content>

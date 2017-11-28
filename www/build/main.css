@@ -80037,6 +80037,128 @@ page-app-setting .setting-item {
   align-items: center;
 }
 
+camera-page .camera-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+camera-page .camera-content .one-action-container {
+  width: 60%;
+  border-radius: 20px;
+  border: solid 5px #1d436f;
+  margin-left: 20%;
+  font-size: 200%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+camera-page .camera-content .one-action-container .action-icon {
+  font-size: 300%;
+}
+
+chatting-no-page .chatting-content {
+  background-color: white;
+}
+
+chatting-no-page .chatting-content .welcome-image {
+  width: 100%;
+  height: 17%;
+}
+
+chatting-no-page .chatting-content .welcome-text {
+  border-radius: 10px;
+  width: 98%;
+  color: white;
+  background-color: #5b9bd5;
+  font-size: 300%;
+  text-align: center;
+  border: solid 1px #43719B;
+  margin: 1%;
+}
+
+chatting-no-page .chatting-content .check-friend {
+  color: black;
+  background-color: #94f1e9;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 98%;
+  text-align: center;
+  font-size: 250%;
+}
+
+chatting-no-page .chatting-content .chatting-image {
+  width: 100%;
+  height: 40%;
+  margin-top: 2%;
+}
+
+chatting-yes-page .chatting-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+chatting-yes-page .chatting-content .select-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+chatting-yes-page .chatting-content .chat-content {
+  overflow: auto;
+  height: 90%;
+  display: inline;
+}
+
+chatting-yes-page .chatting-content .chat-content .my-message {
+  font-size: 300%;
+  background-color: #d9edf7;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+chatting-yes-page .chatting-content .chat-content .other-message {
+  font-size: 300%;
+  background-color: #d9edf7;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+chatting-yes-page .chatting-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+chatting-yes-page .chatting-footer .message-input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 comments-page .comments-content .comments-divider {
   font-size: 1.2rem;
   font-weight: 500;
@@ -82589,6 +82711,109 @@ functionalities-page .functionalities-content .functionalities-list .list-item .
   font-size: 2.0em;
 }
 
+gallery-page .all-text {
+  color: #1d436f;
+  font-size: 120%;
+}
+
+gallery-page .get-photo {
+  background-color: #289688;
+  border-radius: 2px;
+  font-size: 120%;
+  padding: 5px;
+}
+
+gallery-page .get-photo .text {
+  color: white;
+}
+
+gallery-page .gallery-content {
+  width: 100%;
+  height: 100%;
+}
+
+gallery-page .gallery-content .gallery-item {
+  width: 50%;
+  height: 15%;
+  padding: 2px;
+}
+
+gallery-page .gallery-content .gallery-item .check-box {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+gallery-page .footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+gallery-page .footer .segment-buttons {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 4px;
+  border: solid 1px #47749d;
+}
+
+gallery-page .footer .segment-buttons .selected {
+  background-color: #5b9bd5;
+}
+
+gallery-page .footer .segment-buttons .selected .selected-font {
+  color: white;
+  font-size: 120%;
+}
+
+gallery-page .footer .segment-buttons .unselected {
+  background-color: #bed7ee;
+}
+
+gallery-page .footer .segment-buttons .unselected .unselected-font {
+  color: white;
+  font-size: 120%;
+}
+
+gallery-detail-page .gallery-detail-content .back-btn {
+  position: absolute;
+  top: 10px;
+}
+
+gallery-detail-page .gallery-detail-content .main-image {
+  width: 100%;
+  height: 100%;
+}
+
+gallery-detail-page .gallery-detail-content .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background-color: rgba(94, 94, 94, 0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+gallery-detail-page .gallery-detail-content .footer .action-btn {
+  margin: 5px;
+}
+
 google-login-page .google-header .toolbar-background {
   border: none !important;
   background-color: #cc181e;
@@ -82905,6 +83130,210 @@ grid-page .grid-example .grid-item .grid-item-wrapper .grid-item-inner.multi-lin
   flex: 0 0 100%;
   max-width: 100%;
   margin: 5px 0px;
+}
+
+help-page .help-content {
+  width: 100%;
+  height: 100%;
+}
+
+help-page .help-content .slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+imageedit-page .image-edit-content .buttons {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+imageedit-page .image-edit-content .buttons .cancelBtn {
+  color: white;
+  border-radius: 5px;
+  background-color: #c02942;
+  font-size: 110%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+imageedit-page .image-edit-content .buttons .applyBtn {
+  color: white;
+  border-radius: 5px;
+  background-color: #3499db;
+  font-size: 110%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ion-app.ios imageedit-page .user-content-segment .segment-button:hover:not(.segment-activated) {
+  background-color: transparent;
+}
+
+ion-app.wp imageedit-page .user-content-segment {
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+ion-app.wp imageedit-page .user-content-segment .segment-button {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+page-imageview .segment-buttons {
+  border: solid 1px #f4344f;
+  border-radius: 5px;
+}
+
+page-imageview .segment-buttons .selected {
+  background-color: #f4344f;
+}
+
+page-imageview .segment-buttons .selected .selected-font {
+  color: white;
+  font-size: 150%;
+}
+
+page-imageview .segment-buttons .unselected {
+  background-color: white;
+}
+
+page-imageview .segment-buttons .unselected .unselected-font {
+  color: black;
+  font-size: 150%;
+}
+
+page-imageview .slide-view {
+  width: 100%;
+  height: 100%;
+}
+
+page-imageview .slide-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+page-imageview .footer-item {
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #5b9bd5;
+  padding: 0px !important;
+}
+
+page-imageview .footer-item .footer-image {
+  background-color: white;
+}
+
+page-imageview .footer-item .footer-image .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+page-imageview .footer-item .item-title {
+  font-size: 200%;
+  color: white;
+  text-align: center;
+}
+
+page-imageview .footer-item .item-time {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #c2c2c2;
+  margin: 0px;
+  padding-left: 8px;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+}
+
+page-imageview .footer-item .item-time .del-button {
+  background-color: white;
+}
+
+page-imageview-detail .main-content .map-view {
+  width: 100%;
+  height: 100%;
+}
+
+page-imageview-detail .footer-item {
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #5b9bd5;
+  padding: 0px !important;
+}
+
+page-imageview-detail .footer-item .footer-image {
+  background-color: white;
+}
+
+page-imageview-detail .footer-item .footer-image .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+page-imageview-detail .footer-item .item-title {
+  font-size: 200%;
+  color: white;
+  text-align: center;
+}
+
+page-imageview-detail .footer-item .item-time {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #c2c2c2;
+  margin: 0px;
+  padding-left: 8px;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+}
+
+page-imageview-detail .footer-item .item-time .del-button {
+  background-color: white;
 }
 
 layouts-page .layouts-content {
@@ -85410,6 +85839,7 @@ signup-page .signup-content .legal-stuff .legal-action {
 }
 
 tabs-navigation .tabbar {
+  font-size: 300%;
   background: #FFFFFF !important;
   border-top-color: #f0f0f0 !important;
 }
@@ -85956,4 +86386,178 @@ ion-app.md walkthrough-page .walkthrough-content .button-bar {
 ion-app.md walkthrough-page .walkthrough-content .button-bar > .button {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+write-normal-page .next-btn {
+  border: solid 1px #407fa3;
+  border-radius: 5px;
+  color: white;
+  font-size: 120%;
+  background-color: #5b9bd5;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+write-normal-page .write-content .add-vr-action {
+  margin: 2%;
+  margin-top: 5%;
+  border: solid #4d7da8 1px;
+  border-radius: 5px;
+  background-color: #5b9bd5;
+  color: white;
+  width: 96%;
+  text-align: center;
+  font-size: 140%;
+}
+
+write-normal-page .write-content .images-content .one-image-container .buttons {
+  margin: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+write-normal-page .write-content .images-content .one-image-container .buttons .action-button {
+  border: solid #4d7da8 1px;
+  border-radius: 5px;
+  background-color: #5b9bd5;
+  color: white;
+}
+
+write-normal-page .write-content .rules-content {
+  margin: 3%;
+  font-size: 120%;
+}
+
+ion-app.ios write-normal-page .user-content-segment .segment-button:hover:not(.segment-activated) {
+  background-color: transparent;
+}
+
+ion-app.wp write-normal-page .user-content-segment {
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+ion-app.wp write-normal-page .user-content-segment .segment-button {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+writing-page .next-btn {
+  border: solid 1px #407fa3;
+  border-radius: 5px;
+  color: white;
+  font-size: 120%;
+  background-color: #5b9bd5;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+writing-page .write-content .add-vr-action {
+  margin: 2%;
+  margin-top: 5%;
+  border: solid #4d7da8 1px;
+  border-radius: 5px;
+  background-color: #5b9bd5;
+  color: white;
+  width: 96%;
+  text-align: center;
+  font-size: 140%;
+}
+
+writing-page .write-content .images-content .one-image-container .buttons {
+  margin: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+writing-page .write-content .images-content .one-image-container .buttons .action-button {
+  border: solid #4d7da8 1px;
+  border-radius: 5px;
+  background-color: #5b9bd5;
+  color: white;
+}
+
+writing-page .write-content .rules-content {
+  margin: 3%;
+  font-size: 120%;
+}
+
+ion-app.ios write-page .user-content-segment .segment-button:hover:not(.segment-activated) {
+  background-color: transparent;
+}
+
+ion-app.wp write-page .user-content-segment {
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+ion-app.wp write-page .user-content-segment .segment-button {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+writing-add-page .main-content #map {
+  width: 100%;
+  height: 50%;
+}
+
+writing-add-page .main-content .search-group .one-button {
+  text-align: center;
+  font-size: 130%;
+  background-color: #5b9bd5;
+  border-radius: 3px;
+  margin: 1px;
+}
+
+writing-add-page .main-content .search-group .one-button .button-content {
+  background-color: white;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ion-app.ios writing-add-page .listing-header .header-logo {
+  width: 34vw;
+  margin: 0px auto;
+}
+
+ion-app.ios writing-add-page .grid-categories .category-item .category-heading .heading-row .category-title {
+  font-size: 7vw;
 }

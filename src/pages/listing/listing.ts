@@ -19,6 +19,8 @@ import { NotificationsPage } from '../notifications/notifications';
 
 import { SearchPage } from '../search/search';
 
+import { ImageViewPage } from '../imageview/imageview';
+
 
 @Component({
   selector: 'listing-page',
@@ -212,4 +214,8 @@ export class ListingPage {
     this.app.getRootNav().push(SearchPage);
   }
 
+  toImageView(item){
+    this.menu.close();
+    this.app.getRootNav().push(ImageViewPage, { item });
+  }
 }

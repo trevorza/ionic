@@ -42,7 +42,7 @@
       <ion-card-content>
         <ion-slides pager loop="true">
           <ion-slide *ngFor="let slide of post.images">
-            <preload-image src="{{slide}}" [ratio]="{w:1, h:1}"></preload-image>
+            <preload-image src="{{slide}}" [ratio]="{w:1, h:1}" (click)="toImageView(post)"></preload-image>
           </ion-slide>
         </ion-slides>
         <ion-row>

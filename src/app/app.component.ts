@@ -13,6 +13,8 @@ import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { SettingsPage } from '../pages/settings/settings';
 import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
 
+import { ChattingNoPage } from '../pages/chatting-no/chatting-no';
+import { ChattingYesPage } from '../pages/chatting-yes/chatting-yes';
 import { LoginPage } from '../pages/login/login';
 
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
@@ -86,9 +88,10 @@ export class MyApp {
           this.translate.get('LOGIN_SIGNUP')
         ).subscribe(data => {
           if (this.authService.authenticated()) {
+            const chatting_first = localStorage.getItem('chatting_first');
             this.pages = [
               { title: data[0], icon: 'person', component: ProfilePage },
-              { title: data[1], icon: 'create', component: FormsPage },
+              { title: data[1], icon: 'create', component: (chatting_first == undefined ? ChattingNoPage : ChattingYesPage) },
               { title: data[2], icon: 'code', component: FunctionalitiesPage },
               { title: data[3], icon: 'grid', component: LayoutsPage },
               { title: data[4], icon: 'settings', component: SettingsPage }
@@ -133,6 +136,36 @@ export class MyApp {
           }
         });
       
+    });
+
+    events.subscribe('chatting_first', () => {
+      Observable.forkJoin(
+        this.translate.get('PROFILE'),
+        this.translate.get('CHATTING'),
+        this.translate.get('EVENT_BLOG'),
+        this.translate.get('FREQ_QUESTIONS'),
+        this.translate.get('CUSTOMER_CENTER'),
+        this.translate.get('LOGIN_SIGNUP')
+      ).subscribe(data => {
+        if (this.authService.authenticated()) {
+          const chatting_first = localStorage.getItem('chatting_first');
+          this.pages = [
+            { title: data[0], icon: 'person', component: ProfilePage },
+            { title: data[1], icon: 'create', component: (chatting_first == undefined ? ChattingNoPage : ChattingYesPage) },
+            { title: data[2], icon: 'code', component: FunctionalitiesPage },
+            { title: data[3], icon: 'grid', component: LayoutsPage },
+            { title: data[4], icon: 'settings', component: SettingsPage }
+          ];
+        } else {
+          this.pages = [
+            { title: data[5], icon: 'person', component: LoginPage },
+            { title: 'Forms', icon: 'create', component: undefined },
+            { title: data[2], icon: 'code', component: FunctionalitiesPage },
+            { title: data[3], icon: 'grid', component: LayoutsPage },
+            { title: data[4], icon: 'settings', component: SettingsPage }
+          ];
+        }
+      });
     });
   }
 
