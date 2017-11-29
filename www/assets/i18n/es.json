@@ -203,5 +203,18 @@
   "COPY_URL_LINK": "Copy URL link",
   "RE_POST": "re-post",
   "CURRENT_POSTING_WILL_BE_RE_POSTED_AGAIN_NOW_DO_YOU_WANT_TO_RE_POST": "The current posting will be re-posted again now. Do you want to re-post?",
-  "CURRENT_POSTING_WILL_BE_REMOVED_DO_YOU_WANT_TO_CONTINUE": "The current posting will be removed. Do you want to continue?"
+  "CURRENT_POSTING_WILL_BE_REMOVED_DO_YOU_WANT_TO_CONTINUE": "The current posting will be removed. Do you want to continue?",
+  "ADDITIONAL_INFO": "Additional info",
+  "ADDRESS_SEARCH": "Additional info",
+  "CURRENT_LOCATION": "Current Location",
+  "STREET_ADDRESS": "Street Address",
+  "DETAIL_ADDRESS": "Detail Address",
+  "INPUT_DETAIL_ADDRESS": "Input detail address",
+  "PUBLIC": "public",
+  "PRIVATE": "private",
+  "CATEGORY": "category",
+  "TITLE": "Title",
+  "DETAILS": "Details",
+  "FINISH": "Finish",
+  "PUBLIC_PRIVATE": "Public or Private"
 }

@@ -20,6 +20,10 @@ export class WritingAddPage {
 
   streetAddress: any;
   detailAddress: any;
+  public_or_private: any;
+  category: any;
+  title: any;
+  content: any;
 
 
   constructor(

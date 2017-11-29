@@ -213,5 +213,6 @@
   "CATEGORY": "category",
   "TITLE": "Title",
   "DETAILS": "Details",
-  "FINISH": "Finish"
+  "FINISH": "Finish",
+  "PUBLIC_PRIVATE": "Public or Private"
 }
