@@ -83,7 +83,7 @@
     <name>ion2-FullApp ELITE</name>
     <description>The Best Ionic 2 Starter app - ELITE version</description>
     <author email="hi@ionicthemes.com" href="https://ionicthemes.com/">Ionic Themes</author>
-    <content original-src="index.html" src="http://192.168.1.60:8100" />
+    <content original-src="index.html" src="http://192.168.1.60:8101" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -92,6 +92,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-navigation href="http://192.168.1.60:8100" />
+    <allow-navigation href="http://192.168.1.60:8101" />
     <allow-intent href="market:*" />
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
@@ -124,6 +125,7 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
+    <preference name="fullscreen" value="true" />
     <preference name="TwitterConsumerKey" value="lxYOizP79U8rU9lVT0nLQax8h" />
     <preference name="TwitterConsumerSecret" value="y4ngeuCuwjp5tIziYMdkyWCarz0lZ0HGoDpXuq8qVIYemzABdl" />
 </widget>

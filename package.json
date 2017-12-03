@@ -47,7 +47,6 @@
     "bourbon": "4.2.7",
     "com.synconset.imagepicker": "https://github.com/Telerik-Verified-Plugins/ImagePicker.git",
     "cordova-admob-sdk": "^0.7.0",
-    "cordova-android": "~6.3.0",
     "cordova-clipboard": "^1.1.0",
     "cordova-ios": "^4.4.0",
     "cordova-open-native-settings": "^1.4.1",
@@ -82,7 +81,8 @@
     "text-mask-addons": "3.5.1",
     "twitter-connect-plugin": "^0.6.0",
     "videogular2": "^5.2.9",
-    "zone.js": "0.8.12"
+    "zone.js": "0.8.12",
+    "cordova-android": "~6.3.0"
   },
   "devDependencies": {
     "@ionic/app-scripts": "^2.1.4",
