@@ -86545,6 +86545,8 @@ writing-add-page .finish-btn {
   border-radius: 3px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 writing-add-page .main-content #map {

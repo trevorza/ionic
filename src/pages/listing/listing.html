@@ -14,7 +14,10 @@
       </span>
       
       <span *ngIf="authService.authenticated()">
-        <a (click)="onNotificationPage()"><img src="../../assets/images/homeHeader/envelope.png"/></a>
+        <a (click)="onNotificationPage()">
+          <!-- <img src="../../assets/images/homeHeader/envelope.png"/> -->
+          <ion-icon name='mail' style="font-size: 400%;"></ion-icon>
+        </a>
       </span>
     </div>
   </ion-navbar>

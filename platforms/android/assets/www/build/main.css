@@ -83287,8 +83287,11 @@ page-imageview .footer-item .item-time .del-button {
 }
 
 page-imageview-detail .main-content .map-view {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 67vw;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 page-imageview-detail .footer-item {
@@ -86431,6 +86434,7 @@ write-normal-page .write-content .images-content .one-image-container .buttons .
   border-radius: 5px;
   background-color: #5b9bd5;
   color: white;
+  height: 25px;
 }
 
 write-normal-page .write-content .rules-content {
@@ -86503,6 +86507,7 @@ writing-page .write-content .images-content .one-image-container .buttons .actio
   border-radius: 5px;
   background-color: #5b9bd5;
   color: white;
+  height: 25px;
 }
 
 writing-page .write-content .rules-content {
